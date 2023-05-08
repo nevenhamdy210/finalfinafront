@@ -1,0 +1,226 @@
+{
+
+    "portfolio" : [
+        {
+            "id":1,
+            "image": "/images/img1.jpg",
+            "Header":"Is it Autism? ",
+            "Desc":" Learn early signs and prevalence of autism—and other ARI resources for understanding developmental disorders"
+            
+        },
+        {
+            "id":2,
+            "image": "/images/img2.jpg",
+            "Header":" Symptoms of Autism ",
+            "Desc":"Learn more about the physical and behavioral symptoms associated with autism spectrum disorder."
+        },
+        {
+            "id":3,
+            "image": "/images/img3.jpg",
+            "Header":"Screening & Assessment ",
+            "Desc":"Explore information, research and tools available for support with autism screening and assessment needs."
+        },
+        {
+            "id":4,
+            "image": "/images/img4.jpg",
+            "Header":"Treatment ",
+            "Desc":"Explore resources, research and tools for best care and treatment practices to help individuals with autism."
+
+        }
+       
+       
+       
+    ] ,
+
+    "tableData" :[
+
+                ["12:00", "12:00", "12:00", "12:00", "12:00", "12:00"],
+                ["13:00", "13:00", "13:00", "13:00", "13:00", "13:00"],
+                ["14:00", "14:00", "14:00", "14:00", "14:00", "14:00"],
+                ["15:00", "15:00", "15:00", "15:00", "15:00", "15:00"],
+                ["16:00", "16:00", "16:00", "16:00", "16:00", "16:00"],
+                ["17:00", "17:00", "17:00", "17:00", "17:00", "17:00"]
+    ],
+    "cells" : [
+        
+        {
+            "id":1,
+            "cell1":"12:00",
+            "cell2":"12:00",
+            "cell3":"12:00",
+            "cell4":"12:00",
+            "cell5":"12:00",
+            "cell6":"12:00"
+            
+        },
+
+        {
+            "id":2,
+            "cell1":"13:00",
+            "cell2":"13:00",
+            "cell3":"13:00",
+            "cell4":"13:00",
+            "cell5":"13:00",
+            "cell6":"13:00"
+            
+        },
+        {
+            "id":3,
+            "cell1":"14:00",
+            "cell2":"14:00",
+            "cell3":"14:00",
+            "cell4":"14:00",
+            "cell5":"14:00",
+            "cell6":"14:00"
+            
+        },
+         
+        {
+            "id":4,
+            "cell1":"15:00",
+            "cell2":"15:00",
+            "cell3":"15:00",
+            "cell4":"15:00",
+            "cell5":"15:00",
+            "cell6":"15:00"
+            
+        },
+       
+        {
+            "id":5,
+            "cell1":"16:00",
+            "cell2":"16:00",
+            "cell3":"16:00",
+            "cell4":"16:00",
+            "cell5":"16:00",
+            "cell6":"16:00"
+            
+        },
+        {
+            "id":6,
+            "cell1":"17:00",
+            "cell2":"17:00",
+            "cell3":"17:00",
+            "cell4":"17:00",
+            "cell5":"17:00",
+            "cell6":"17:00"
+            
+        }
+        
+    
+    
+    ],
+    "Doctors" : [
+        {
+            "id":1,
+            "image": "/images2/doc1.jpg",
+            "name":"Dr Roz Halari",
+            "desc":"Consultant in Clinical Neuropsychologist " ,
+            "body":"Specialties : {Autism} {ADHD} {Neuropsychology}  {Bipolar} {disorder}  {Anxiety} {Depression}",
+            "count":1
+            
+        },
+        {
+            "id":2,
+            "image": "/images2/doc2.jpg",
+            "name":"Dr Annique Clopon",
+            "desc":"Psychologist " ,
+            "body":" Specialties :{Autism}  {Anxiety}  {Complex PTSD} {Imposter Syndrome}",
+            "count":2
+
+        },
+        {
+            "id":3,
+            "image": "/images2/doc3.jpg",
+            "name":"Dr Debora Elijah",
+            "desc":"Neuropsychologist ",
+            "body":"Specialties : {Autism} {ADHD} {Anxiety}  {Emotional control} ",
+            "count":3
+        },
+        {
+            "id":4,
+            "image": "/images2/doc4.jpg",
+            "name":"Dr Teresa Gomez ",
+            "desc":"Child, Adolescent and Adult Psychiatrist ",
+            "body":"Specialties : {Autism}  {ADHD} {Depression}  {Drug addiction}  {Anxiety} ",
+            "count":4
+        },
+        {
+            "id":5,
+            "image": "/images2/doc5.jpg",
+            "name":"Dr Maria Martinez Herves",
+            "desc":"Psychiatrist",
+            "body":"Specialties : {Autism}  {ADHD} {Paediatric psychiatry} {Depression}  {Anxiety}  {Psychosis}",
+            "count":5
+        },
+        {
+            "id":6,
+            "image": "/images2/doc6.jpg",
+            "name":"Dr Saadia Arshad",
+            "desc":"Psychiatrist",
+            "body":"Specialties : {Autism}  {Learning disabilities} {ADHD} {Behavioural problems} ",
+            "count":6
+        },
+        {
+            "id":7,
+            "image": "/images2/doc7.jpg",
+            "name":"Dr Martin",
+            "desc":"Psychiatrist",
+            "body":"Specialties :{Autism}  {Anxiety}  {Complex PTSD} {Imposter Syndrome} ",
+            "count":7
+        },
+        {
+            "id":8,
+            "image": "/images2/doc8.jpg",
+            "name":"Dr Hadia Joseef",
+            "desc":"Child, Adolescent and Adult Psychiatrist",
+            "body":"Specialties : {Autism} {ADHD} {Neuropsychology}  {Bipolar} {disorder}  {Anxiety} {Depression}",
+            "count":8
+        },
+        {
+            "id":9,
+            "image": "/images2/doc9.jpg",
+            "name":"Dr Carl Rideout",
+            "desc":"Psychiatrist",
+            "body":"Specialties : {Autism} {ADHD} {Neuropsychology}  {Bipolar} {disorder}  {Anxiety} {Depression} ",
+            "count":9
+        }
+    ],
+    
+    "Understanding_Autism1" : [
+        {
+            "id":1,
+            "Qes1": "What Is Autism?",
+            "Desc1":"Autism Spectrum Disorder (ASD) is a developmental disorder with symptoms that appear within the first three years of life. Most children with autism look like other kids but they act and interact in ways that feel different from the behaviors of other children. When interacting with others, they may respond in unexpected ways, or they may not interact at all. ",
+            "Desc2":"Autism is a spectrum disorder, which means that it appears in a range of forms and levels of severity. Some individuals develop typical capabilities in terms of speech and language – and develop exceptional skills – but struggle with lifelong social and behavioral differences. Others may have challenges in communication, sensory sensitivities, and behavioral issues, such as excessive tantrums, repetitive behaviors, aggression, and self-harm. The good news is that appropriate treatments can improve outcomes for many, if not most, people diagnosed with ASD."
+            
+        },
+        {
+            "id":2,
+            "Qes2": "How Common Is It?",
+            "Desc1":" For many years a diagnosis of autism was rare, occurring in just 1 child out of 2,000. However, since the mid-1980s, the rate of autism has increased dramatically around the world. In March 2020, the US Federal Centers for Disease Control announced that 1 in every 54 children in the United States is affected by autism. Autism is more likely to affect boys than girls, but children of all genders have been diagnosed with ASD.",
+            "Desc2":" "
+        },
+        {
+            "id":3,
+            "Qes3": "What are the Signs of Autism?",
+            "Desc1":"Many signs can indicate that an individual may be affected by an ASD. Keep in mind that every person diagnosed with autism is different. Some have several signs and symptoms, while others experience only a few.",
+            "Desc2":"The DSM-5, the standard reference used by most healthcare providers, includes a full list of autism diagnostic criteria. If you notice any of these symptoms, you should ask your loved one’s physician to perform an autism screening."
+        },
+        {
+            "id":4,
+            "Qes4": "Where Can I Get Autism Screening?",
+            "Desc1":"Early intervention can make a big difference for children with autism and screening during the first three years of life is increasingly becoming the standard of care. In 2016, a study from the American Academy of Pediatrics found that 81% of pediatricians “always” or “almost always” use formal tools to screen for autism in children under 36 months old.",
+            "Desc2":"There are no genetic, blood, or other laboratory tests that can confirm an autism diagnosis. Instead, medical providers use observation and standardized behavioral evaluation to identify children at risk for an ASD."
+
+        },
+        {
+            "id":5,
+            "Qes5": "What should I do next?",
+            "Desc1":"When preparing to talk to your medical provider, you may want to first fill out the Autism Treatment Evaluation Checklist (ATEC). The ATEC is one of the most widely used assessment tools in the autism community. Although it is not a diagnostic test for autism, this checklist is designed to monitor how an individual progresses over time and to track the efficacy of treatment. Completing the ATEC can give you a good understanding of your child’s current symptoms to discuss with your medical provider. ",
+            "Desc2":" "
+        }
+       
+       
+    ] 
+}
