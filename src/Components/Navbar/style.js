@@ -10,18 +10,18 @@ export const NavbarSection = styled.div`
 `
 
 export const Logo = styled.div`
-    width: 50%;
+    width: 47%;
     float: left;
    display:flex;
 `
 
 export const LogoText = styled.h2`
-    font-size: 40px;
+    font-size: 43px;
     font-weight: bold
 `
 
 export const UlList = styled.ul`
-    width: 50%;
+    width: 52%;
     float: left;
     list-style: none;
     padding: 0%;

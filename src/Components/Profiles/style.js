@@ -20,6 +20,7 @@ export const RightSide = styled.div`
     float:right;
     height: 860px;
     padding:30px;
+    margin-top:1%;
 
 `
 
@@ -28,6 +29,7 @@ export const ImageWrapper = styled.div `
     padding:30px;
     padding-bottom:0px;
     background-color:white;
+    
 `
 
 export const Image = styled.img`
@@ -40,15 +42,15 @@ export const Image = styled.img`
 export const Header =styled.div`
     position: absolute;
     color:white;
-    top: 33%;
-    left: 38%;
+    top: 20%;
+    left: 50%;
     transform: translate(-50%,-50%);
     
 `
 export const H1 =styled.h1`
-    font-size:40px;
-    text-align:left;
-    color: #800080;black;white;#005f69;
+    font-size:35px;
+    color:#005f69;#A3C1AD;#005f69; black;#800080;black;white;#005f69;
+  
 `
 export const Title =styled.div`
     font-size:25px;
@@ -57,7 +59,7 @@ export const Title =styled.div`
 `
 export const HeaderSection =styled.div`
     height:250px;
-    background: url('../images/prof4.jpg');
+    background: url('../images/prof7.jpg');
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -68,10 +70,11 @@ export const HeaderSection =styled.div`
 export const Schedules=styled.div`
     padding:5px;
     width: 100%;
-    height:400px;  
+    height:430px;  
     background-color:white;
     border-radius: 20px;
     box-shadow: 0 0 5px  ; 
+    margin-bottom:65px;
 `
 export const Name=styled.h2`
     font-size:20px;
@@ -90,15 +93,16 @@ export const Desc=styled.div`
 `
 export const Sec1=styled.div`
 height:300px;
-margin-bottom:90px;
+margin-bottom:95px;
 margin-top:20px;
 width:100%;
 background-color:white;
 border-radius: 10px; 
-box-shadow: 0 0 5px  ;    
+
+
 `
 export const Sec3=styled.div`
-height:500px;
+height:510px;
 margin-top:50px;
 width:100%;
 background-color:white;
@@ -173,38 +177,6 @@ export const ListItem = styled.li`
     text-align: left;
     font-family: Roboto, Arial, sans-serif;
 `
-export const TableContainer = styled.table`
-  width:100%;
-`;
-
-export const TableHeader = styled.th`
-padding: 3px;
-text-align: center;
-background-color: #6c757d;
-color: #fff;
-font-size:20px;
-`
-export const TableRow = styled.tr`
-
-  &:nth-child(even) {
-    background-color: #f2f2f2;
-  }
-`
-
-export const TableCell = styled.td`
-border: 1px solid #ddd;
-padding: 3px;
-text-align: center;
-background-color: ${({ isSelected }) => (isSelected ? 'lightgreen' : 'white')};
-cursor: pointer;
-transition: background-color 0.3s ease;
-
-&:hover {
-    background-color: ${({ isSelected }) => (isSelected ? 'green' : 'black')};
-    color:white;
-}
-
-`
 
 export const ReviewHeader = styled.div`
 margin-top: 30px;
@@ -218,22 +190,23 @@ text-shadow: 0 0 7px gray ;
 padding:10px;
 `
 export const Image2 = styled.img`
-    width:7%;
-    height: 60px;
-    border-radius:20px;
+    width:8%;
+    height: 70px;
+    border-radius:70px;
     float:left;
     margin-right:15px;
-    margin-top:15px;
-    box-shadow: 0 0 4px  ; 
 `
 export const Icon5 =styled.i`
 color:gold;
 font-size:20px;
+background:white;
+border:none;
 `
 export const Name2=styled.h2`
     font-size:20px;
     color:black;
     text-align:left;
+    margin-top:10px;
     font-family: Arial, sans-serif;
 `
 export const ReviewSection = styled.div` 
@@ -259,6 +232,8 @@ padding-bottom:1%;
 export const IconSection2 =styled.button`
 text-align:center;
 margin-bottom:3%;
+background:white;
+border:none;
 `
 
 export const Icon1 =styled.i`
@@ -284,7 +259,19 @@ padding-top:15px;
 padding-right:20px;
 font-size:20px;
 `
-export const SpanIcon =styled.span`
+export const Button =styled.button`
+padding:13%;
+width:100%;
+background:linear-gradient(to right, #A3C1AD, #008080);#E1EBEE;#ADD8E6;#E1EBEE;#E6E6FA;
+border-radius: 20px;
+box-shadow: 0 0 7px  gray; 
+font-size:25px;
+color:white;
+font-family:Arial, sans-serif;
+&:hover {
+    background:black;
+    color: white;
+    }
 
 `
 

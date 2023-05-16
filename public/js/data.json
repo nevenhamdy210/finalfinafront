@@ -189,24 +189,24 @@
     "Reviews" : [
         {
             "id":1,
-            "image": "/images/img1.jpg",
+            "image": "/images2/prof_review.jpg",
             "Name":"Hadia Joseef",
             "Comment":" so friendly and best doctor at all."
             
         },
         {
             "id":2,
-            "image": "/images/img2.jpg",
+            "image": "/images2/prof_review.jpg",
             "Name":" Martin ",
             "Comment":" so friendly and best doctor at all."        },
         {
             "id":3,
-            "image": "/images/img3.jpg",
+            "image": "/images2/prof_review.jpg",
             "Name":"Saadia Arshad ",
             "Comment":" so friendly and best doctor at all."        },
         {
             "id":4,
-            "image": "/images/img4.jpg",
+            "image": "/images2/prof_review.jpg",
             "Name":"Teresa Gomez ",
             "Comment":" so friendly and best doctor at all."        }
        

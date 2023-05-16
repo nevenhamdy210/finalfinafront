@@ -1,7 +1,7 @@
 import React ,{useEffect, useState} from "react";
 import { IconSection,Icon4,BodySection, H1, LeftSide, RightSide, Sec1, Sec3, ReviewHeader } from "./style";
 import axios from "axios";
-import {Header,Title,HeaderSection,ReviewSection,Image2,Name2,Icon5,IconSection2,Comment,Icon2,Icon,Icon1,InputSubmit,RadioWrapper,RadioLabel,RadioButton, UlList,ListItem,ImageWrapper, Image,Schedules, Name,Desc} from "./style.js";
+import {Button,Header,Title,HeaderSection,ReviewSection,Image2,Name2,Icon5,IconSection2,Comment,Icon2,Icon,Icon1,InputSubmit,RadioWrapper,RadioLabel,RadioButton, UlList,ListItem,ImageWrapper, Image,Schedules, Name,Desc} from "./style.js";
 import Footer from '../Footer/index.js';
 import { Link } from "react-router-dom";
 
@@ -13,7 +13,7 @@ const Specialist=({index})=> {
 
 
     const PortfolioImages =images.map((imageItem) =>{
-     if (1 === imageItem.id)
+     if (4 === imageItem.id)
       {
       return(
           <div>
@@ -68,16 +68,15 @@ const Specialist=({index})=> {
         </div>
         )       
         }}})
+        
       return (
         <React.Fragment>
             
             <BodySection>
-
-
             <LeftSide>
             <HeaderSection>
             <Header>
-                <Title><H1>Welcome</H1> we are glad that you are part of our group and we hope that you will achieve your goal with us </Title>
+                <H1>Welcome to our team</H1> 
             </Header>
             </HeaderSection>
             <Sec3>
@@ -89,8 +88,13 @@ const Specialist=({index})=> {
 
 
             <RightSide>
-            <Sec1></Sec1>
             {PortfolioImages}
+            <Sec1>
+            <Button><i className="fa fa-check"></i> Check Appointments</Button>
+            <br/><br/>
+            <Button><i className="fa fa-clock-o"></i> Schedule Appointments</Button>
+            </Sec1>
+            
             </RightSide>
             </BodySection>
             <Footer/>
