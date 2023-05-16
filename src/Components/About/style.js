@@ -1,0 +1,146 @@
+import styled from "styled-components";
+
+export const Header =styled.div`
+    position: absolute;
+    color:white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+`
+
+export const Title =styled.h2`
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+`
+export const HeaderSection =styled.div`
+    height:200px;
+    background: linear-gradient(to right, #9907facc,#3204),url('../images2/team.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    position: relative;
+    margin-bottom:10%;
+`
+export const SecondSection =styled.div`
+width:100%;
+height:700px;
+margin-top:8%;
+margin-bottom:6%;
+
+`
+export const RightSide = styled.div`
+float:right;
+width:50%;
+
+` 
+export const LeftSide = styled.div `
+float:left;
+width:50%;
+
+`
+
+export const Image = styled.img`  
+   float:left;
+   margin:10%;
+   margin-left:15%;
+   height:480px;
+   width:70%;
+   border: 10px solid gray;
+   border-radius: 10px;
+
+`
+export const TitleList = styled.h1`
+
+text-shadow:5px 2px lightgray;
+margin-bottom:10%;
+margin-top:10%;
+margin-left:15%;
+font-family: Roboto, Arial, sans-serif;
+font-size:45px;
+padding: 0%;
+font-weight:bold;
+`
+export const List = styled.ul`
+text-align:left;
+margin-top:40px;
+font-size:40px;
+list-style: none;
+ padding: 0%;
+`
+export const Elements = styled.div`
+color:gray;
+margin-left:15%;
+font-size:25px;
+
+` 
+export const ThirdSection =styled.div`
+width:100%;
+height:900px;
+display:block;
+margin-bottom:22%;
+margin-top:6%;
+`
+
+export const ListElements = styled.li`
+color:gray;
+margin-left:10%;
+margin-bottom:5%;
+font-size:20px;
+position:relative;
+display:flex;
+` 
+export const Day = styled.span`
+color:white;
+font-size:25px;
+
+` 
+export const Info = styled.span`
+color:white;
+font-size:18px;
+
+` 
+export const Time = styled.div`
+color:white;
+font-size:20px;
+margin-left:35%;
+
+` 
+export const ListRight = styled.ul`
+
+background:#5F9EA0;#008E97;#007791;#72A0C1;#2e279d;
+padding:60px;
+padding-top:18%;
+height:900px;
+margin:15%;
+` 
+export const TitleRight =styled.h2`
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    
+`
+export const TitleLeft =styled.h2`
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    `
+export const ListLeft = styled.ul`
+background:#A3C1AD;#72A0C1;#499afa;
+padding:60px;
+padding-top:18%;
+height:900px;
+margin:15%;
+` 
+export const Icon =styled.i`
+margin-right:5%;
+font-size:28px;
+padding:10px;
+border-radius: 20px;
+color:white;
+&:hover {
+    background-color:#85d5a5;
+    color: white;
+    }
+`

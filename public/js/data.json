@@ -117,7 +117,7 @@
             "name":"Dr Roz Halari",
             "desc":"Consultant in Clinical Neuropsychologist " ,
             "body":"Specialties : {Autism} {ADHD} {Neuropsychology}  {Bipolar} {disorder}  {Anxiety} {Depression}",
-            "count":1
+            "age":30
             
         },
         {
@@ -126,7 +126,7 @@
             "name":"Dr Annique Clopon",
             "desc":"Psychologist " ,
             "body":" Specialties :{Autism}  {Anxiety}  {Complex PTSD} {Imposter Syndrome}",
-            "count":2
+            "age":33
 
         },
         {
@@ -135,7 +135,7 @@
             "name":"Dr Debora Elijah",
             "desc":"Neuropsychologist ",
             "body":"Specialties : {Autism} {ADHD} {Anxiety}  {Emotional control} ",
-            "count":3
+            "age":32
         },
         {
             "id":4,
@@ -143,7 +143,7 @@
             "name":"Dr Teresa Gomez ",
             "desc":"Child, Adolescent and Adult Psychiatrist ",
             "body":"Specialties : {Autism}  {ADHD} {Depression}  {Drug addiction}  {Anxiety} ",
-            "count":4
+            "age":40
         },
         {
             "id":5,
@@ -151,7 +151,7 @@
             "name":"Dr Maria Martinez Herves",
             "desc":"Psychiatrist",
             "body":"Specialties : {Autism}  {ADHD} {Paediatric psychiatry} {Depression}  {Anxiety}  {Psychosis}",
-            "count":5
+            "age":35
         },
         {
             "id":6,
@@ -159,7 +159,7 @@
             "name":"Dr Saadia Arshad",
             "desc":"Psychiatrist",
             "body":"Specialties : {Autism}  {Learning disabilities} {ADHD} {Behavioural problems} ",
-            "count":6
+            "age":36
         },
         {
             "id":7,
@@ -167,7 +167,7 @@
             "name":"Dr Martin",
             "desc":"Psychiatrist",
             "body":"Specialties :{Autism}  {Anxiety}  {Complex PTSD} {Imposter Syndrome} ",
-            "count":7
+            "age":27
         },
         {
             "id":8,
@@ -175,7 +175,7 @@
             "name":"Dr Hadia Joseef",
             "desc":"Child, Adolescent and Adult Psychiatrist",
             "body":"Specialties : {Autism} {ADHD} {Neuropsychology}  {Bipolar} {disorder}  {Anxiety} {Depression}",
-            "count":8
+            "age":28
         },
         {
             "id":9,
@@ -183,7 +183,34 @@
             "name":"Dr Carl Rideout",
             "desc":"Psychiatrist",
             "body":"Specialties : {Autism} {ADHD} {Neuropsychology}  {Bipolar} {disorder}  {Anxiety} {Depression} ",
-            "count":9
+            "age":39
         }
-    ]
+    ],
+    "Reviews" : [
+        {
+            "id":1,
+            "image": "/images/img1.jpg",
+            "Name":"Hadia Joseef",
+            "Comment":" so friendly and best doctor at all."
+            
+        },
+        {
+            "id":2,
+            "image": "/images/img2.jpg",
+            "Name":" Martin ",
+            "Comment":" so friendly and best doctor at all."        },
+        {
+            "id":3,
+            "image": "/images/img3.jpg",
+            "Name":"Saadia Arshad ",
+            "Comment":" so friendly and best doctor at all."        },
+        {
+            "id":4,
+            "image": "/images/img4.jpg",
+            "Name":"Teresa Gomez ",
+            "Comment":" so friendly and best doctor at all."        }
+       
+       
+       
+    ] 
 }

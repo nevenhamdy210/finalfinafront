@@ -2,7 +2,7 @@ import React ,{Component} from "react";
 import './style.js' ;
 import Footer from "../Footer/index.js";
 import axios from "axios";
-import {Icon2,Hover,Tr,Td,IconSection, ImageWrapper, Overlay, OverlaySpan,Time, PortfolioSection, PortfolioTitle ,Span1,Image,Schedules, Name,Desc} from "./style.js";
+import {Hover,Tr,Td, ImageWrapper, Overlay, OverlaySpan,Time, PortfolioSection, PortfolioTitle ,Span1,Image,Schedules, Name,Desc} from "./style.js";
 import { Link } from "react-router-dom";
 class Appointment extends Component
  {
@@ -65,7 +65,7 @@ class Appointment extends Component
     return(
         <div>
           <PortfolioSection>
-            <PortfolioTitle><i class="fa fa-calendar" aria-hidden="true"></i>     Appointments <br/><Span1><i className="fa fa-angle-double-right"></i> schedule your appointment now</Span1></PortfolioTitle>
+            <PortfolioTitle><i class="fa fa-calendar" aria-hidden="true"></i> Appointments <br/><Span1><i className="fa fa-angle-double-right"></i> schedule your appointment now</Span1></PortfolioTitle>
             
             <div className="box">
                {PortfolioImages} 

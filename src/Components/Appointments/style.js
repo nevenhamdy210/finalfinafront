@@ -10,14 +10,20 @@ export const PortfolioTitle = styled.h2`
     text-align:center;
     margin-top:0;
     font-size: 60px;
-    background-color:#ddd;
-    text-shadow: 5px 5px lightgray;
+    color:white;
+    //background-color:#ddd;
+    text-shadow: 5px 5px b;ack;
     font-family: Roboto, Arial, sans-serif;
+    background:url('../images2/time2.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    position: relative;
 `
 
 export const Span1 = styled.span `
 text-align: left;
-color:gray;
+color:white;gray;
 margin: 10px 20px;
 margin-bottom:10px;
 display: inline-block;
@@ -48,6 +54,10 @@ export const ImageWrapper = styled.div `
     font-size: 0;
     padding:20px;
     position: relative;
+    //background:linear-gradient(to right, #9907facc,#3204),url('../images2/time2.jpg');
+    background-size: cover;
+    background-position: center;
+    //background:#3204;
 `
 export const Hover = styled.div `
     

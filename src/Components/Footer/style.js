@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const FooterSection =styled.div` 
 text-align: center;
-background-color:#fcf7f1;
+background:#fcf7f1; linear-gradient(to left, white, #fcf7f1);#A3C1AD;#5F9EA0;#8DA399;#fcf7f1;
 
 `
 export const Logo =styled.img`
@@ -20,7 +20,7 @@ color:black
 export const FooterDesc =styled.div` 
 bottom:0px;
 width:100%;
-background-color:rgba(0, 0, 0, 0.5);
+background:rgba(0, 0, 0, 0.3);
 color:white;
 margin-top:2%;
 padding:30px;

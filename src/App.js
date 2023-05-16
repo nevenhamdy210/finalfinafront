@@ -11,6 +11,8 @@ import Understanding_Autism1 from "./Homee/ThirdSection/Understanding_Autism1";
 import Understanding_Autism2 from "./Homee/ThirdSection/Understanding_Autism2";
 import Understanding_Autism3 from "./Homee/ThirdSection/Understanding_Autism3";
 import Understanding_Autism4 from "./Homee/ThirdSection/Understanding_Autism4";
+import Specialist from "./Components/Profiles/specialist";
+import About from "./Components/About";
 import { BrowserRouter ,Route ,Routes } from "react-router-dom";
 class App extends Component {
 
@@ -25,11 +27,12 @@ class App extends Component {
     <BrowserRouter>
     <Navbar />
     <Routes>
-    
        <Route exact path="/" element={<Index/>}/>
        <Route path="/contact" element={<Contact/>}/>
        <Route path="/appointment" element={<Appointment/>}/>
        <Route path="/Login" element={<Login/>}/>
+       <Route path="/About" element={<About/>}/>
+       <Route path="/Specialist" element={<Specialist/>}/>
        <Route path="/Questionnaire" element={<Questionnaire/>}/>
        <Route path="/Schedule1" element={<Schedule index={1}/>}/>
        <Route path="/Schedule2" element={<Schedule index={2}/>}/>
@@ -41,10 +44,10 @@ class App extends Component {
        <Route path="/Schedule8" element={<Schedule index={8}/>}/>
        <Route path="/Schedule9" element={<Schedule index={9}/>}/>
        <Route path="/ScheduleAdmin" element={<ScheduleAdmin/>}/>
-       <Route exact path="/Understanding_Autism1" element={<Understanding_Autism1/>}/>
-       <Route exact path="/Understanding_Autism2" element={<Understanding_Autism2/>}/>
-       <Route exact path="/Understanding_Autism3" element={<Understanding_Autism3/>}/>
-       <Route exact path="/Understanding_Autism4" element={<Understanding_Autism4/>}/>
+       <Route path="/Understanding_Autism1" element={<Understanding_Autism1/>}/>
+       <Route path="/Understanding_Autism2" element={<Understanding_Autism2/>}/>
+       <Route path="/Understanding_Autism3" element={<Understanding_Autism3/>}/>
+       <Route path="/Understanding_Autism4" element={<Understanding_Autism4/>}/>
     </Routes>
     </BrowserRouter>
     
