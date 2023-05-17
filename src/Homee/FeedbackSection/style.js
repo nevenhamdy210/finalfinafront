@@ -1,52 +1,4 @@
 import styled from "styled-components";
-export const ProfileSection = styled.div `
-    padding: 50px 0;
-    overflow: hidden;
-`
-
-export const Profilee = styled.div `
-    width: 50%;
-    float: left;
-`
-
-export const ProfileList = styled.ul`
-    list-style: none
-`
-
-export const ProfileItem= styled.li`
-    margin-bottom: 8px
-`
-
-export const ProfileItemSpan= styled.span`
-    display: inline-block;
-    width: 100px;
-    font-weight: bold
-`
-
-export const ProfileSpanW= styled.span`
-    font-weight: normal;
-    color: #eb5424
-`
-
-export const Skills= styled.div`
-    width: 50%;
-    float: left;
-`
-
-export const SkillsDesc= styled.div`
-    font-size: 15px;
-    color: #888;
-    line-height: 1.5;
-    margin-bottom: 20px
-`
-
-export const Bar= styled.div`
-    overflow: hidden;
-    padding: 10px 0;
-    margin-bottom: 10px
-`
-
-
 export const BarTitle= styled.span`
     float: left;
 `
@@ -106,9 +58,10 @@ bottom: 0;
 `
 export const Title= styled.div`
     font-size: 35px; 
-    margin-bottom: 30px;
-    color:teal;
-    text-shadow:3px 2px lightgray;
+    margin-bottom: 10%;
+    color:black;
+    font-weight: bold;
+    //text-shadow:0px 0px lightgray;
 `
 export const TitleSpan= styled.span `
     font-weight: normal;
@@ -125,62 +78,52 @@ export const ThirdSection = styled.div`
     overflow: hidden;
     margin-top:5%;
     padding:7%;
+    height:900px;
+    background-color: white;
     `;
 export const RightSide = styled.div`
 float:right;
-width:50%;
+width:60%;
+margin-top:2%;
 ` 
 export const LeftSide = styled.div `
+margin-top:5%;
 float:left;
-width:50%;
+width:40%;
 `
-export const InputContainer = styled.div`
-  display: flex;
+export const Text = styled.div`
+  font-size:25px;
   flex-direction: column;
   margin-bottom: 20px;
-  width: 600px;
-`;
-
-export const Label = styled.label`
-  font-weight: bold;
-  margin-bottom: 10px;
-`;
-
-export const Input = styled.input`
-  height: 50px;
-  padding: 10px;
+  margin-top: 10%;
   width:100%;
-  border:none;
-  border-radius: 10px;
-
+  color:#8DA399;gray;
 `;
 
-export const TextArea = styled.textarea`
-  height: 120px;
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-`;
 
 export const Button = styled.button`
-  background-color: teal;
-  border: none;
-  color: #ffffff;
-  padding: 15px 32px;
+background: linear-gradient(to right, #8DA399,teal);  color: white;
+  border: 1px solid gray;
+  padding: 10px 150px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  margin-top: 90px;
+  font-size: 20px;
+  margin-top: 20%;
   cursor: pointer;
+  border-radius:30px;
+  &:hover {
+    //background-color #2774AE;
+    background:#8DA399;
+    color: white;
+    }
+
 `;
 export const Image1 = styled.img`  
-   float:left;
-   height:200px;
-   margin-left:10%;
-   margin-top:5%;
-   width:30%;
+   float:center;
+   height:700px;
+   margin-left:3%;
+   width:100%;
    //border: 5px solid gray;
   //border-bottom-right-radius: 50%;
   border-radius:30px;

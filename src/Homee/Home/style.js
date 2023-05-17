@@ -11,6 +11,7 @@ export const HomeSection =styled.div`
     background-position: center;
     text-align: center;
     position: relative;
+    
 `
 
 export const HomeInfo =styled.div`
@@ -48,16 +49,17 @@ export const Span =styled.span`
     color: #000
 `
 
-export const HomeButton=styled.button`
+export const HomeButton=styled.div`
     background: orange;
     color: #fff;
     font-size: 10px;
     width: 300px;
+    margin-left:25%;
     border: 0;
-    padding: 10px 20px;
+    padding: 13px 20px;
     cursor: pointer;
     font-weight: bold;
-    border-radius:10px;
+    border-radius:15px;
     &:hover{
         background: #fff;
         color: #eb5424;

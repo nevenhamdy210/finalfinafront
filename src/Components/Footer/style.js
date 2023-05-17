@@ -2,7 +2,10 @@ import styled from "styled-components";
 
 export const FooterSection =styled.div` 
 text-align: center;
-background:#fcf7f1; linear-gradient(to left, white, #fcf7f1);#A3C1AD;#5F9EA0;#8DA399;#fcf7f1;
+background: linear-gradient(to left,#A3C1AD,#fcf7f1); 
+color: white;
+
+//background:#fcf7f1; linear-gradient(to left, white, #fcf7f1);#A3C1AD;#5F9EA0;#8DA399;#fcf7f1;
 
 `
 export const Logo =styled.img`

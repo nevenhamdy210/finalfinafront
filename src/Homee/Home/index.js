@@ -3,10 +3,8 @@ import {HomeSection ,HomeTitle,HomeInfo, HomeDesc, HomeButton} from "./style";
 const Home =()=>{
 return(
     <HomeSection>
-    <div class="container">
-        <HomeInfo>
-            
-            
+    <div >
+        <HomeInfo> 
             <HomeTitle>Autism</HomeTitle>
             <HomeDesc>
             We can help you with  how to deal with mental health related to autism 

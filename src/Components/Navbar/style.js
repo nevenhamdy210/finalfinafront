@@ -2,17 +2,18 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const NavbarSection = styled.div`
-    padding: 3px 0;
     overflow: hidden;
     background: #fff;
     position: relative;
-    border-bottom: 1px solid #000;
+    //border-bottom: 0.5px solid white;
+    margin:0px;
 `
 
 export const Logo = styled.div`
     width: 47%;
     float: left;
    display:flex;
+   
 `
 
 export const LogoText = styled.h2`

@@ -14,6 +14,7 @@ import Understanding_Autism4 from "./Homee/ThirdSection/Understanding_Autism4";
 import Specialist from "./Components/Profiles/specialist";
 import About from "./Components/About";
 import { BrowserRouter ,Route ,Routes } from "react-router-dom";
+import { Body } from "./Homee/Index/style";
 class App extends Component {
 
   state={
@@ -23,7 +24,7 @@ class App extends Component {
 
   render(){
   return (
-    
+    <Body>
     <BrowserRouter>
     <Navbar />
     <Routes>
@@ -50,7 +51,7 @@ class App extends Component {
        <Route path="/Understanding_Autism4" element={<Understanding_Autism4/>}/>
     </Routes>
     </BrowserRouter>
-    
+    </Body>
   );
 }
 }

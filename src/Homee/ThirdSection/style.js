@@ -4,12 +4,13 @@ export const PortfolioSection = styled.div`
     background: #f8f8f8;
     padding-top: 20px; 
     overflow: hidden;
-`
+    //border-radius:30px;
+    `
 
 export const PortfolioTitle = styled.h2`
     text-align: center;
-    font-size: 35px;
-    text-shadow:5px 2px lightgray;
+    font-size: 38px;
+    //text-shadow:5px 2px lightgray;
 `
 
 export const Span = styled.span `
@@ -38,13 +39,14 @@ export const ImageWrapper = styled.div `
     font-size: 0;
     position: relative;
     &:hover > div {
-        opacity: 1
+        opacity: 0.8
     }
 `
 
 export const Image = styled.img`
     width: 100%;
-    height:400px;
+    height:350px;
+    
 `
 
 export const Overlay = styled.div` 
@@ -53,7 +55,7 @@ export const Overlay = styled.div`
     left: 0;
     bottom: 0;
     right: 0;
-    background: rgba(235,84,36 , 0.5);
+    background:#5F9EA0;#073980;#5F9EA0;#5F9EA0;#AFDBF5;#008080;rgba(235,84,36 , 0.5);
     font-size: 15px;
     opacity: 0 ;
     margin:0
@@ -63,14 +65,19 @@ export const OverlaySpan= styled.span`
     position: absolute;
     top: 50%;
     left: 50%;
+    font-size:19px;
     transform: translate(-50%,-50%);
     background: #fff;
     display: block;
-    padding: 10px 20px;
+    padding: 0px 0px;
     cursor: pointer;
-    border: 2px solid #eb5424;
+    background:#5F9EA0;#073980;#5F9EA0;#5F9EA0;#AFDBF5;#008080;
+    border-radius:30px;
+    color:white;
 `
-
+export const Box= styled.div`
+    border-radius:30px;
+`
 export const Header= styled.h1`
 font-size:50px;
 width:100%;

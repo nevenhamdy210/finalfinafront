@@ -30,7 +30,7 @@ const Third_Section =()=>{
     return(
         
           <PortfolioSection>
-            <PortfolioTitle>Understanding Autism</PortfolioTitle>
+            <PortfolioTitle>FAQ about Autism</PortfolioTitle>
             <div className="box">
                {PortfolioImages} 
             </div>

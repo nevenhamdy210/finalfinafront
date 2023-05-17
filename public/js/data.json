@@ -3,26 +3,26 @@
     "portfolio" : [
         {
             "id":1,
-            "image": "/images/img1.jpg",
+            "image": "/images/WhatIsAutism.jpg",
             "Header":"Is it Autism? ",
             "Desc":" Learn early signs and prevalence of autism—and other ARI resources for understanding developmental disorders"
             
         },
         {
             "id":2,
-            "image": "/images/img2.jpg",
+            "image": "/images/autism2.jpg",
             "Header":" Symptoms of Autism ",
             "Desc":"Learn more about the physical and behavioral symptoms associated with autism spectrum disorder."
         },
         {
             "id":3,
-            "image": "/images/img3.jpg",
+            "image": "/images/autism3.jpg",
             "Header":"Screening & Assessment ",
             "Desc":"Explore information, research and tools available for support with autism screening and assessment needs."
         },
         {
             "id":4,
-            "image": "/images/img4.jpg",
+            "image": "/images/autism4.jpg",
             "Header":"Treatment ",
             "Desc":"Explore resources, research and tools for best care and treatment practices to help individuals with autism."
 
