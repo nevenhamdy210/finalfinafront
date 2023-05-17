@@ -58,21 +58,23 @@ width:50%;
 export const Image = styled.img`  
    float:left;
    margin:10%;
-   height:650px;
-   width:60%;
-   box-shadow: 60px -30px lightgray;
-   border: 5px solid gray;
+   height:600px;
+   width:65%;
+   box-shadow: 60px -40px #E1EBEE;
   //border-bottom-right-radius: 50%;
-   border: gray 10px double;
+   border: #A3C1AD 12px double;
    background-clip: content-box;
+   border-radius:30px;
 `
 export const TitleList = styled.h1`
 text-align:left;
-text-shadow:5px 2px lightgray;
 margin-bottom:60px;
 font-family: Roboto, Arial, sans-serif;
 font-size:28px;
 padding: 0%;
+//font-family:Andale Mono, monospace;
+font-weight: bold;
+   
 
 `
 export const List = styled.ul`

@@ -7,9 +7,7 @@ render (){
         <SecondSection>
             <LeftSide>
             <Image src="../images/section2.jpg" alt="react"/>
-
             </LeftSide>
-
             <RightSide>
             <TitleList>We are a link between the autistic patient and the specialist</TitleList>
 

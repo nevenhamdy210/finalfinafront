@@ -5,7 +5,7 @@ export const NavbarSection = styled.div`
     overflow: hidden;
     background: #fff;
     position: relative;
-    //border-bottom: 0.5px solid white;
+   border-bottom: 0.1px solid gray;
     margin:0px;
 `
 
@@ -59,9 +59,9 @@ export const LinkItem = styled(Link)`
     }
 `
 export const LogoImg =styled.img`
-
+margin-top:7%;
 border-radius:200px;
-width:80px;
-height:45px;
-margin-top:5%;
+width:50px;
+height:40px;
+
 `

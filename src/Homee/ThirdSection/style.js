@@ -10,6 +10,8 @@ export const PortfolioSection = styled.div`
 export const PortfolioTitle = styled.h2`
     text-align: center;
     font-size: 38px;
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: bold;
     //text-shadow:5px 2px lightgray;
 `
 
@@ -30,14 +32,16 @@ export const PortfolioItem = styled.li`
     margin-left:15%;
     font-size:15px;
     color:#5d8aa8;
+    
 `
 
 
 export const ImageWrapper = styled.div `
-    width: 25%;
+    width: 24.3%;
     float: left;
     font-size: 0;
     position: relative;
+    margin-left:10px;
     &:hover > div {
         opacity: 0.8
     }
@@ -46,19 +50,21 @@ export const ImageWrapper = styled.div `
 export const Image = styled.img`
     width: 100%;
     height:350px;
-    
+    border-radius:30px;
 `
 
 export const Overlay = styled.div` 
     position: absolute;
-    top: 0;
+    border-radius:30px;
     left: 0;
     bottom: 0;
     right: 0;
+    top:0;
     background:#5F9EA0;#073980;#5F9EA0;#5F9EA0;#AFDBF5;#008080;rgba(235,84,36 , 0.5);
     font-size: 15px;
     opacity: 0 ;
-    margin:0
+    transition: 1s ease;
+]
 `
 
 export const OverlaySpan= styled.span`
@@ -70,10 +76,10 @@ export const OverlaySpan= styled.span`
     background: #fff;
     display: block;
     padding: 0px 0px;
-    cursor: pointer;
     background:#5F9EA0;#073980;#5F9EA0;#5F9EA0;#AFDBF5;#008080;
     border-radius:30px;
     color:white;
+  transition-delay: 1s;
 `
 export const Box= styled.div`
     border-radius:30px;
@@ -87,9 +93,11 @@ color:white;
 padding:150px;
 margin-top:0px;
 margin-bottom:0px;
+font-family:Comic Sans MS, Comic Sans, cursive;
 `
 export const Qes_Title= styled.h1`
 font-size:30px;
+font-family:Comic Sans MS, Comic Sans, cursive;
 
 `
 export const Body= styled.div`

@@ -102,19 +102,21 @@ export const Text = styled.div`
 
 
 export const Button = styled.button`
-background: linear-gradient(to right, #8DA399,teal);  color: white;
-  border: 1px solid gray;
+  background: white;
+  border: 1px solid #8DA399;
   padding: 10px 150px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 20px;
+  font-family:Apple Chancery, cursive;
   margin-top: 20%;
   cursor: pointer;
   border-radius:30px;
   &:hover {
     //background-color #2774AE;
-    background:#8DA399;
+    //background:#8DA399;
+    background: linear-gradient(to right, #8DA399,#A3C1AD);  color: white;
     color: white;
     }
 

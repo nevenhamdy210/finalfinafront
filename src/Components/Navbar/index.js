@@ -8,7 +8,7 @@ const Navbar = () => {
     <div className="container">
         
         <Logo>
-        <LogoImg src="../images/logo.jpg" alt="react"/>
+        <LogoImg src="../images/logo2.jpg" alt="react"/>
          <LogoText>Autism</LogoText>
         </Logo>
         

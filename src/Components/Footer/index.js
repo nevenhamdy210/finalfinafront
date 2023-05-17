@@ -1,10 +1,12 @@
 import React from "react";
 import { FooterDesc,FooterSection,FooterTitle,Icon,Logo,ProfileList,ProfileItem,ProfileItemSpan } from "./style";
 const Footer =()=>{
+    //<Logo src="../images/logo2.jpg" alt="react"></Logo>
     return( 
     <div>  
     <FooterSection>
-        <FooterTitle><Logo src="../images/logo.jpg" alt="react"></Logo><br/>Autism Awareness</FooterTitle>
+        <br/>
+        <FooterTitle> Autism Awareness</FooterTitle>
         <ProfileList>
         <ProfileItem >
          <ProfileItemSpan>Phone</ProfileItemSpan>
