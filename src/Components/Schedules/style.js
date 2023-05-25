@@ -16,12 +16,13 @@ export const LeftSide = styled.div`
 export const RightSide = styled.div`
     width:78%;
     float:right;
-    background-color:rgba(236, 236, 236, 0.8);
+    background-color:white;rgba(236, 236, 236, 0.8);
     color:gray;
     margin-top:10px;
     height: 430px;
     padding:50px;
-    
+    border-radius: 6px;
+    box-shadow: 0 0 10px  #669999;
 
 `
 
@@ -30,9 +31,13 @@ export const ImageWrapper = styled.div `
     padding-top:30px;
     padding:30px;
     display:block;
-    border:10px solid white;
+    border:2px solid white;
+    background:white;
+    margin-bottom:10px;
+    margin-top:10px;
+    border-radius: 6px;
+    box-shadow: 0 0 8px  #669999;
 `
-
 export const Image = styled.img`
     width: 60%;
     height: 60px;
@@ -74,19 +79,21 @@ export const OverlaySpan= styled.button`
 export const Schedules=styled.div`
     padding:5px;
     width: 100%;
-    height:250px;
+    height:233px;
     display:block;
-    border:10px solid white;
-    background-color:rgba(236, 236, 236, 0.8);
+    border-radius: 6px;
+    box-shadow: 0 0 8px  #669999;
+    background-color:white;rgba(236, 236, 236, 0.8);
 
 `
 export const Name=styled.h2`
     font-size:20px;
     color:black;
     text-align:center;
-    background-color:white;
-    text-shadow: 3px 0px lightgray;
-    font-family:  Arial, sans-serif;
+    //background-color:#ddd;
+    //text-shadow: 3px 0px lightgray;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+
 `
 export const Desc=styled.div`
     color:white;
@@ -121,7 +128,7 @@ export const TableContainer = styled.table`
 export const TableHeader = styled.th`
 padding: 3px;
 text-align: center;
-background-color: #6c757d;
+background-color: #A3C1AD;
 color: #fff;
 font-size:20px;
 `
@@ -155,7 +162,7 @@ font-weight: bold;
 border:2px solid white;
 width:30%;
 padding:10px;
-background-color:lightgreen;
+background-color:#E1EBEE;
 color:white;
 color: ${({ selectedCell }) => (selectedCell ? 'green' : 'black')};
 `
@@ -172,7 +179,7 @@ export const RadioWrapper = styled.div`
   margin:10px;
   border:2px solid white;
   width:60%;
-  background-color:white;
+  background-color:#E1EBEE;#F0F8FF;
   font-size:15px;
 `
 export const Header = styled.div`
@@ -183,22 +190,22 @@ margin-top:0px;
 `
 export const InputSubmit =styled.button`
 position: relative;
-background-color: black;
-color: white;
+background-color: white;
 font-size: 15px;
-padding:12px 60px;
+padding:10px 60px;
 margin-top:50px;
 float:right;
-border: none;
+border: 1px solid #A3C1AD;
 border-radius: 10px;
 text-align: center;
+font-family:Arial, sans-serif;
 &:hover {
-background-color:#6c757d;
-color: white;
+  background:linear-gradient(to right, #5F9EA0, #A3C1AD);#E1EBEE;#ADD8E6;#E1EBEE;#E6E6FA;
+  color: white;
 }
 `
 export const RadioLabel = styled.label`
- 
+ color:black;
  
 `
 

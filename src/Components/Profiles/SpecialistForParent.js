@@ -1,17 +1,32 @@
 import React ,{useEffect, useState} from "react";
 import { IconSection,Icon4,BodySection, H1, LeftSide, RightSide, Sec1, Sec3, ReviewHeader } from "./style";
 import axios from "axios";
-import {Button,Header,HeaderSection,ReviewSection,Image2,Name2,Icon5,IconSection2,Comment,Icon2,Icon,Icon1,UlList,ListItem,ImageWrapper, Image,Schedules, Name} from "./style.js";
+import {Button,Button2,Header,HeaderSection,ReviewSection,Image2,Name2,Icon5,IconSection2,Comment,Icon2,Icon,Icon1,UlList,ListItem,ImageWrapper, Image,Schedules, Name} from "./style.js";
 import Footer from '../Footer/index.js';
 import { Link } from "react-router-dom";
+import ReviewForm from "./ReviewForm";
 
-const Specialist=({index})=> {
+const SpecialistForParent=({index})=> {
       const [images , setImages] = useState ([])
       useEffect(()=> {
           axios.get('js/data.json').then(res => {setImages (res.data.Doctors)})
       } ,[] )
 
+      const [showReviewForm, setShowReviewForm] = useState(false);
 
+        const handleMakeReviewClick = () => {
+            setShowReviewForm(true);
+        };
+
+        const handleSubmitReview = (review) => {
+            console.log(review);
+            setShowReviewForm(false);
+        };
+        const handleCloseReviewForm = () => {
+            setShowReviewForm(false);
+          };
+        
+            
     const PortfolioImages =images.map((imageItem) =>{
      if (index === imageItem.id)
       {
@@ -21,14 +36,16 @@ const Specialist=({index})=> {
           <Schedules>
           <ImageWrapper key={imageItem.id}>
           <Image src={imageItem.image} alt=""/>
-          <Name>{imageItem.name}&nbsp;&nbsp;<Link to="/ScheduleAdmin"> <i class="fa fa-edit"></i></Link></Name>
+          <Name>{imageItem.name}</Name>
           </ImageWrapper>
           <IconSection>
-            
+           
             <Icon4 className= "fa fa-facebook-square"></Icon4>
             <Icon4 className= "fa fa-envelope"></Icon4>
             <Icon4 className= "fa fa-linkedin"></Icon4>
+            
             </IconSection>
+            <br/>
             <hr/>
           <UlList>
           <ListItem><Icon1 className="fa fa-user" aria-hidden="true"></Icon1>age :{imageItem.age}</ListItem>
@@ -80,9 +97,10 @@ const Specialist=({index})=> {
             </Header>
             </HeaderSection>
             <Sec3>
-                
                 <ReviewHeader><i className="fa fa-comments"></i> Reviews</ReviewHeader>
                 <br/><br/> <br/><br/> {Reviews}
+                <Button2 type='submit' onClick={handleMakeReviewClick}><i className= "fa fa-pencil"></i> Make Review</Button2>
+                {showReviewForm && <ReviewForm onSubmit={handleSubmitReview} onClose={handleCloseReviewForm}/>}
             </Sec3>
             </LeftSide> 
 
@@ -90,12 +108,8 @@ const Specialist=({index})=> {
             <RightSide>
             {PortfolioImages}
             <Sec1>
-             
-            <Button><i className="fa fa-check"></i> Check Appointments</Button>
-            <br/><br/>
-            
             <Link to={{
-                        pathname: "/ScheduleAdmin" + index}} ><Button><i className="fa fa-clock-o"></i> Schedule Appointments</Button></Link>
+                        pathname: "/Schedule" + index}} ><Button ><i className="fa fa-clock-o"></i> Request an Appointment</Button></Link>
             </Sec1>
             
             </RightSide>
@@ -104,4 +118,4 @@ const Specialist=({index})=> {
             </React.Fragment>
         )
       }
-  export default Specialist;
+  export default SpecialistForParent;

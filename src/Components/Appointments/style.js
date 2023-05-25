@@ -6,24 +6,25 @@ export const PortfolioSection = styled.div`
 `
 
 export const PortfolioTitle = styled.h2`
-    padding:100px;
+    padding:140px;
     text-align:center;
     margin-top:0;
     font-size: 60px;
     color:white;
     //background-color:#ddd;
-    text-shadow: 5px 5px b;ack;
     font-family: Roboto, Arial, sans-serif;
-    background:url('../images2/time2.jpg');
+    background:url('../images/date1.jpg');
     background-size: cover;
     background-position: center;
     text-align: center;
     position: relative;
+    font-family:Apple Chancery, cursive;
+
 `
 
 export const Span1 = styled.span `
 text-align: left;
-color:white;gray;
+color:#ddd;
 margin: 10px 20px;
 margin-bottom:10px;
 display: inline-block;
@@ -47,29 +48,38 @@ export const PortfolioItem = styled.li`
 
 
 export const ImageWrapper = styled.div `
-    width: 30%;
+    width: 25%;
     float: right;
-    margin-right:50px;
-    margin-top:70px;
+    margin-right:7%;
+    margin-top:5%;
+    margin-bottom:3%;
     font-size: 0;
-    padding:20px;
+    padding-top:30px;
+    height:450px;
     position: relative;
     //background:linear-gradient(to right, #9907facc,#3204),url('../images2/time2.jpg');
     background-size: cover;
     background-position: center;
     //background:#3204;
+    box-shadow: 4px 4px 6px 6px rgba(0, 0, 0, 0.1);
 `
 export const Hover = styled.div `
     
     position: relative;
+    height:120px;
     &:hover > div {
-        opacity: 0.4
+    background:#A3C1AD;#5F9EA0;#073980;#5F9EA0;#5F9EA0;#AFDBF5;#008080;rgba(235,84,36 , 0.5);
+    font-size: 15px;
+    opacity: 0.8 ;
+    transition: 1s ease;
     }`
 
 export const Image = styled.img`
-    width: 100%;
-    height: 300px;
-    border-radius:10px; 
+    width: 25%;
+    height: 120px;
+    border-radius:200px; 
+    margin-left:33%;
+    left: 0;
 `
 
 export const Overlay = styled.div` 
@@ -78,25 +88,27 @@ export const Overlay = styled.div`
     left: 0;
     bottom: 0;
     right: 0;
-    background:#5F9EA0;gray; rgba(235,84,36 , 0.5);
+    background:##5F9EA0;gray; rgba(235,84,36 , 0.5);
     font-size: 15px;
     opacity: 0 ;
     margin:0;
-    border-radius: 20px;
+    width:25%;
+    left: 33%;
+    border-radius: 200px;
     
 `
 
 export const OverlaySpan= styled.button`
     position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-20%);
+    top: 30%;
+    left: 47%;
+    transform: translate(-50%,75%);
     background: #fff;
-    padding: 10px 20px;
+    padding: 3px 3px;
     border: none;
     border-radius: 20px;
     text-align: center;
-    &:hover {
+    &:hover > img{
     background-color: black;
     color: white;
     
@@ -104,43 +116,65 @@ export const OverlaySpan= styled.button`
 
 `
 export const Schedules=styled.div`
-margin-top:20px;
 padding:10px;
 width: 100%;
 height:200px;
 border-radius:10px;
-background-color:#ddd;
+
 `
 export const Name=styled.h2`
-font-size:30px;
+font-size:25px;
 color:black;rgba(24, 193, 150, 0.8);
 text-align:center;
+font-family:Apple Chancery, cursive;
 
 `
 export const Desc=styled.div`
-color:white;
-font-size:10px;
+color:gray;
+font-size:20px;
 text-align:center;
-padding-top:10px
+padding-top:10px;
 `
-export const Time=styled.table`
+export const Last_Sec=styled.div`
 
 margin-left:5%;
 margin-top:2%;
-width:90%;
-height:10px;
 color:black;
-font-size:10px;
-border:1px solid white;
+border:1px solid black;
 
 `
-export const Tr=styled.tr`
-
-`
-export const Td=styled.td`
-text-align:center;
+export const Left=styled.div`
+text-align:left;
 color:gray;
+width:50%;
+float:left;
+font-size:12px;
+padding-top:10%;
 `
+export const Right=styled.div`
+text-align:center;
+color:black;
+width:40%;
+float:right;
+`
+export const Button=styled.button`
+padding:8%;
+width:100%;
+border-radius: 10px;
+border:none; 
+font-size:24px;
+color:white;
+margin-top:10%;
+font-family:Apple Chancery, cursive;
+//background:linear-gradient(to right, #A3C1AD, #008080);
+background:linear-gradient(to right, #A3C1AD, #8DA399);#E1EBEE;#ADD8E6;#E1EBEE;#E6E6FA;    ;
+
+&:hover {
+    background:black;
+    color: white;
+    }
+`
+
 export const Icon =styled.i`
 color:yellow;
 font-size:20px;

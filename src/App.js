@@ -15,6 +15,9 @@ import Specialist from "./Components/Profiles/specialist";
 import About from "./Components/About";
 import { BrowserRouter ,Route ,Routes } from "react-router-dom";
 import { Body } from "./Homee/Index/style";
+import SpecialistForParent from "./Components/Profiles/SpecialistForParent";
+import Parent from "./Components/Profiles/parent";
+import Child from "./Components/Profiles/child";
 class App extends Component {
 
   state={
@@ -32,8 +35,27 @@ class App extends Component {
        <Route path="/contact" element={<Contact/>}/>
        <Route path="/appointment" element={<Appointment/>}/>
        <Route path="/Login" element={<Login/>}/>
+       <Route path="/Parent" element={<Parent/>}/>
        <Route path="/About" element={<About/>}/>
-       <Route path="/Specialist" element={<Specialist/>}/>
+       <Route path="/Child" element={<Child/>}/>
+       <Route path="/Specialist1" element={<Specialist index={1}/>}/>
+       <Route path="/Specialist2" element={<Specialist index={2}/>}/>
+       <Route path="/Specialist3" element={<Specialist index={3}/>}/>
+       <Route path="/Specialist4" element={<Specialist index={4}/>}/>
+       <Route path="/Specialist5" element={<Specialist index={5}/>}/>
+       <Route path="/Specialist6" element={<Specialist index={6}/>}/>
+       <Route path="/Specialist7" element={<Specialist index={7}/>}/>
+       <Route path="/Specialist8" element={<Specialist index={8}/>}/>
+       <Route path="/Specialist9" element={<Specialist index={9}/>}/>
+       <Route path="/SpecialistForParent1" element={<SpecialistForParent index={1}/>}/>
+       <Route path="/SpecialistForParent2" element={<SpecialistForParent index={2}/>}/>
+       <Route path="/SpecialistForParent3" element={<SpecialistForParent index={3}/>}/>
+       <Route path="/SpecialistForParent4" element={<SpecialistForParent index={4}/>}/>
+       <Route path="/SpecialistForParent5" element={<SpecialistForParent index={5}/>}/>
+       <Route path="/SpecialistForParent6" element={<SpecialistForParent index={6}/>}/>
+       <Route path="/SpecialistForParent7" element={<SpecialistForParent index={7}/>}/>
+       <Route path="/SpecialistForParent8" element={<SpecialistForParent index={8}/>}/>
+       <Route path="/SpecialistForParent9" element={<SpecialistForParent index={9}/>}/>
        <Route path="/Questionnaire" element={<Questionnaire/>}/>
        <Route path="/Schedule1" element={<Schedule index={1}/>}/>
        <Route path="/Schedule2" element={<Schedule index={2}/>}/>
@@ -44,7 +66,15 @@ class App extends Component {
        <Route path="/Schedule7" element={<Schedule index={7}/>}/>
        <Route path="/Schedule8" element={<Schedule index={8}/>}/>
        <Route path="/Schedule9" element={<Schedule index={9}/>}/>
-       <Route path="/ScheduleAdmin" element={<ScheduleAdmin/>}/>
+       <Route path="/ScheduleAdmin1" element={<ScheduleAdmin index={1}/>}/>
+       <Route path="/ScheduleAdmin2" element={<ScheduleAdmin index={2}/>}/>
+       <Route path="/ScheduleAdmin3" element={<ScheduleAdmin index={3}/>}/>
+       <Route path="/ScheduleAdmin4" element={<ScheduleAdmin index={4}/>}/>
+       <Route path="/ScheduleAdmin5" element={<ScheduleAdmin index={5}/>}/>
+       <Route path="/ScheduleAdmin6" element={<ScheduleAdmin index={6}/>}/>
+       <Route path="/ScheduleAdmin7" element={<ScheduleAdmin index={7}/>}/>
+       <Route path="/ScheduleAdmin8" element={<ScheduleAdmin index={8}/>}/>
+       <Route path="/ScheduleAdmin9" element={<ScheduleAdmin index={9}/>}/>
        <Route path="/Understanding_Autism1" element={<Understanding_Autism1/>}/>
        <Route path="/Understanding_Autism2" element={<Understanding_Autism2/>}/>
        <Route path="/Understanding_Autism3" element={<Understanding_Autism3/>}/>

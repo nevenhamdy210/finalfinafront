@@ -21,7 +21,7 @@ const ScheduleAdmin=(index)=> {
         </ImageWrapper>
         <Schedules>
         <UlList>
-        <ListItem>  <Icon1 className= "fa fa-hospital-o"></Icon1> {imageItem.desc}</ListItem>
+        <ListItem> <Icon1 className= "fa fa-hospital-o"></Icon1> {imageItem.desc}</ListItem>
         <br/>
         <ListItem><Icon2 className= "fa fa-medkit"></Icon2> {imageItem.body}</ListItem> 
         </UlList>

@@ -148,7 +148,7 @@
         {
             "id":5,
             "image": "/images2/doc5.jpg",
-            "name":"Dr Maria Martinez Herves",
+            "name":"Dr Maria Martinez ",
             "desc":"Psychiatrist",
             "body":"Specialties : {Autism}  {ADHD} {Paediatric psychiatry} {Depression}  {Anxiety}  {Psychosis}",
             "age":35
@@ -212,5 +212,86 @@
        
        
        
-    ] 
+    ],
+    "Parents" : [
+        {
+            "id":1,
+            "image": "/images2/prof_review.jpg",
+            "name":" Roz Halari",
+            "num_of_childs":"1" ,
+            "email":"user@gmail.com",
+            "age":30
+            
+        },
+        {
+            "id":2,
+            "image": "/images2/prof_review.jpg",
+            "name":" Annique Clopon",
+            "num_of_childs":"2 " ,
+            "email":" user@gmail.com",
+            "age":33
+
+        },
+        {
+            "id":3,
+            "image": "/images2/prof_review.jpg",
+            "name":"Debora Elijah",
+            "num_of_childs":"3 ",
+            "email":"user@gmail.com",
+            "age":32
+    }],
+    "childs" : [
+        
+        {
+            "id":1,
+            "cell1_img":"/images2/prof_review.jpg",
+            "cell2_name":"Mark"
+            
+        },
+
+        {
+            "id":2,
+            "cell1_img":"/images2/prof_review.jpg",
+            "cell2_name":"Dalida"
+            
+            
+        },
+        {
+            "id":3,
+            "cell1_img":"/images2/prof_review.jpg",
+            "cell2_name":"Jolly"
+            
+        }
+        
+    
+    
+    ],
+    "games" : [
+        {
+            "id": 1,
+            "name_game":"game 1",
+            "level":"2"
+        },
+        {
+            "id": 2,
+            "name_game":"game 2",
+            "level":"1"
+        },
+        {
+            "id": 3,
+            "name_game":"game 3",
+            "level":"3"
+        },
+        {
+            "id": 4,
+            "name_game":"game 4",
+            "level":"1"
+        },
+        {
+            "id": 5,
+            "name_game":"game 5",
+            "level":"1"
+        }
+
+    ]
 }

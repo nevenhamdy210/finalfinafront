@@ -54,21 +54,21 @@ const TableAdmin = () => {
       const renderTable = () => {
         return (
           <React.Fragment>
-            <tbody>
-              {tableData.map((row, rowIndex) => (
-                <TableRow key={rowIndex}>
-                  {row.map((cell, colIndex) => (
-                    <TableCell key={colIndex} onClick={() => setSelectedCell({ row: rowIndex, col: colIndex })}
-                      style={{
-                        backgroundColor:selectedCell && selectedCell.row === rowIndex && selectedCell.col === colIndex? "lightgreen": "white",
-                        color:selectedCell && selectedCell.row === rowIndex && selectedCell.col === colIndex? "white": "gray", }}
-                    >
-                      {cell}
-                    </TableCell>
-                  ))}
-                </TableRow>
+        <tbody>
+        {tableData.map((row, rowIndex) => (
+          <TableRow key={rowIndex}>
+          {row.map((cell, colIndex) => (
+            <TableCell key={colIndex} onClick={() => setSelectedCell({ row: rowIndex, col: colIndex })}
+            style={{
+              backgroundColor:selectedCell && selectedCell.row === rowIndex && selectedCell.col === colIndex? "#A3C1AD": "white",
+              color:selectedCell && selectedCell.row === rowIndex && selectedCell.col === colIndex? "white": "gray", }}
+          >
+                {cell}
+          </TableCell>
+            ))}
+          </TableRow>
               ))}
-            </tbody>
+          </tbody>
           </React.Fragment>
         );
       };

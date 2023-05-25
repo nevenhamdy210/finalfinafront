@@ -4,11 +4,12 @@ export const FooterSection =styled.div`
 text-align: center;
 //background: linear-gradient(to left,#A3C1AD,#fcf7f1); 
 color: white;
-//background:linear-gradient(to left, #8DA399, #A3C1AD);
+//background:linear-gradient(to left, #5F9EA0, #A3C1AD);
 
-background: linear-gradient(to right,white,#A3C1AD);
+background: linear-gradient(to right,#5F9EA0,#A3C1AD);
 //background: linear-gradient(to right, #AFDBF5,#72A0C1); 
 
+background:linear-gradient(to right, #A3C1AD, #8DA399);#E1EBEE;#ADD8E6;#E1EBEE;#E6E6FA;    ;
 
 `
 export const Logo =styled.img`

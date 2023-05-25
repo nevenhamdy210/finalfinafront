@@ -49,9 +49,11 @@ export const Header =styled.div`
 `
 export const H1 =styled.h1`
     font-size:35px;
+    background-color:white;
+    border-radius:5px;
     color:#005f69;#A3C1AD;#005f69; black;#800080;black;white;#005f69;
-  
 `
+
 export const Title =styled.div`
     font-size:25px;
     text-align:left;
@@ -81,7 +83,7 @@ export const Name=styled.h2`
     color:black;
     text-align:center;
     background-color:white;
-    text-shadow: 2px 0px lightgray;
+    //text-shadow: 2px 0px lightgray;
     font-family:  Arial, sans-serif;
 `
 export const Desc=styled.div`
@@ -102,11 +104,11 @@ border-radius: 10px;
 
 `
 export const Sec3=styled.div`
-height:510px;
+height:540px;
 margin-top:50px;
 width:100%;
 background-color:white;
-border-radius: 10px; 
+border-radius: 20px; 
 box-shadow: 0 0 5px  ;  
 `
 export const Icon4 =styled.i`
@@ -186,8 +188,16 @@ font-size: 40px;
 font-weight: bold;
 border:2px solid white;
 color:#008080;
-text-shadow: 0 0 7px gray ; 
+//text-shadow: 0 0 7px gray ; 
 padding:10px;
+`
+export const ReviewHeader2 = styled.div`
+color:#008080;
+text-align:center;
+font-size: 30px;
+border:2px solid white;
+margin-bottom:5%;
+margin-top:4%;
 `
 export const Image2 = styled.img`
     width:8%;
@@ -259,19 +269,242 @@ padding-top:15px;
 padding-right:20px;
 font-size:20px;
 `
+export const IconP3 =styled.i`
+color:gray;
+display:flex;
+padding-top:0px;
+padding-right:20px;
+font-size:20px;
+`
+export const IconP4 =styled.i`
+color:gray;
+display:flex;
+padding-top :0px;
+padding-bottom:10px;
+padding-right:13px;
+font-size:20px;
+`
+
+export const Iconp5 =styled.i`
+color:gray;
+display:flex;
+padding-top:0px;
+padding-right:10px;
+font-size:20px;
+`
 export const Button =styled.button`
 padding:13%;
 width:100%;
-background:linear-gradient(to right, #A3C1AD, #008080);#E1EBEE;#ADD8E6;#E1EBEE;#E6E6FA;
 border-radius: 20px;
 box-shadow: 0 0 7px  gray; 
 font-size:25px;
 color:white;
-font-family:Arial, sans-serif;
+font-family:Apple Chancery, cursive;
+background:linear-gradient(to right, #A3C1AD, #008080);#E1EBEE;#ADD8E6;#E1EBEE;#E6E6FA;
 &:hover {
     background:black;
     color: white;
     }
 
 `
+export const Button2 =styled.button`
+padding:10px 20px;
+width:30%;
+margin-top:4%;
+margin-right:5%;
+float:right;
+border-radius: 50px;
+//box-shadow: 0 0 7px  gray; 
+font-size:25px;
+border:1px solid #A3C1AD;
+color:black;
+font-family:Apple Chancery, cursive;
+background:white;
+&:hover {
+  background:linear-gradient(to right, #A3C1AD, #008080);#E1EBEE;#ADD8E6;#E1EBEE;#E6E6FA;
+    ;
+    color: white;
+    }
 
+`
+export const Form = styled.form`
+
+align-items: center;
+position: absolute;
+  box-shadow: 0 0 200px  #669999;
+  top: 105%;
+  left: 56%;
+  transform: translate(-90%, -40%);
+  background-color: white;
+  width:50%;
+  height:68%;
+  border-radius: 10px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+`;
+
+export const Label = styled.label`
+  font-weight: bold;
+  margin-left: 6%;
+  font-size:20px;
+font-family:Apple Chancery, cursive;
+
+`;
+
+
+
+export const RatingContainer = styled.div`
+  display: flex;
+  gap: 8px;
+  align-items: center;
+`;
+
+export const StarIcon = styled.span`
+  font-size: 30px;
+  color: ${({ isActive }) => (isActive ? "#ffc107" : "#e4e5e9")};
+  cursor: pointer;
+  &:hover {
+          color: #ffc107;
+      }
+  
+  
+
+  `;
+
+  export const InputForm =styled.div`
+    overflow: hidden
+`;
+
+export const Input =styled.input`
+
+  width: 60%;
+  padding: 10px 10px;
+  margin-left: 25px ;
+  border: 0.5px solid gray;
+  text-align: center;
+  border-radius: 20px;
+  
+`;
+
+export const TextArea =styled.textarea`
+    width: 60%;
+    margin-left:17%;
+    background: #ddd;
+    border-radius: 5px;
+    margin-top:10px;
+    font-size:15px;
+    padding:25px;
+    
+    `;
+
+export const InputSubmit =styled.button`
+position: relative;
+background-color: black;
+color: white;
+font-size: 15px;
+padding:15px 45px;
+float:right;
+margin-left:100px;
+margin-top:50px;
+margin-bottom:10px;
+border: none;
+cursor: pointer;
+border-radius: 20px;
+text-align: center;
+&:hover {
+background-color: gray;
+color: white;
+}
+`;
+export const CloseIcon = styled.span`
+font-size: 24px;
+color: black;
+position: absolute;
+top: 10px;
+right: 30px;
+cursor: pointer;
+padding:1%;
+&:hover {
+    background-color: red;
+    color: white;
+    top: 10px;
+    right: 30px;
+    }
+`;
+
+export const TableHeader = styled.th`
+padding: 3px;
+text-align: center;
+background-color: #008080;
+background:#8DA399;linear-gradient(to right, #A3C1AD, #A3C1AD);
+color: white;
+font-size:20px;
+`
+export const TableRow = styled.tr`
+
+  &:nth-child(odd) {
+    background-color: #f2f2f2;
+  }
+`
+
+export const TableCell = styled.td`
+border: 1px solid #ddd;
+padding: 20px;
+text-align: center;
+transition: background-color 0.3s ease;
+
+`
+export const TableContainer = styled.table`
+  width:100%;
+  padding:7%;
+  
+`;
+export const TableContainer2 = styled.table`
+  width:100%;
+  padding:6%;
+  
+`;
+export const Image3 = styled.img`
+    width:18%;
+    height: 30px;
+    border-radius:100px;
+    float:center;
+    margin-right:10px;
+`
+export const Header_child_list =styled.div`
+  font-size:30px;
+    color:black;
+    padding-top:6%;
+    padding-left:8%;
+    color: #008080;
+    font-family:Apple Chancery, cursive;
+
+    `
+export const AddButton = styled.button`
+font-size: 24px;
+background:white;
+border-radius:50px;
+padding :2px 50px;
+float:right;
+margin-right:10%;
+font-family:Apple Chancery, cursive;
+border: 1px solid  #A3C1AD;
+&:hover {
+    background:linear-gradient(to right, #A3C1AD, #8DA399);#E1EBEE;#ADD8E6;#E1EBEE;#E6E6FA;    ;
+    color: white;
+    }
+`;
+export const Button_parent =styled.button`
+padding:13%;
+width:100%;
+border-radius: 20px;
+box-shadow: 0 0 7px  gray; 
+font-size:25px;
+color:white;
+font-family:Apple Chancery, cursive;
+background:linear-gradient(to right, #A3C1AD, #008080);
+background:linear-gradient(to right, #A3C1AD, #8DA399);#E1EBEE;#ADD8E6;#E1EBEE;#E6E6FA;    ;
+
+&:hover {
+    background:black;
+    color: white;
+    }`

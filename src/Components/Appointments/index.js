@@ -2,7 +2,7 @@ import React ,{Component} from "react";
 import './style.js' ;
 import Footer from "../Footer/index.js";
 import axios from "axios";
-import {Hover,Tr,Td, ImageWrapper, Overlay, OverlaySpan,Time, PortfolioSection, PortfolioTitle ,Span1,Image,Schedules, Name,Desc} from "./style.js";
+import {Hover,Tr,Td, ImageWrapper, Overlay, OverlaySpan,Last_Sec, PortfolioSection, PortfolioTitle ,Span1,Image,Schedules, Name,Desc, Left, Right, Button} from "./style.js";
 import { Link } from "react-router-dom";
 class Appointment extends Component
  {
@@ -26,37 +26,27 @@ class Appointment extends Component
                <Image src={imageItem.image} alt=""/>
                 <Overlay>
                 <Link to={{
-                        pathname: "/Schedule" + imageItem.id}} > <OverlaySpan type='submit'>
-                        Schedule Now
+                        pathname: "/SpecialistForParent" + imageItem.id}} > <OverlaySpan type='submit'>
+                        View Profile
                     </OverlaySpan>
                 </Link>
 
                 </Overlay>
                 </Hover>
-            <Schedules>
+                <Schedules>
                     <Name>{imageItem.name}</Name>            
                     <br /><br />
-                    <Desc> {imageItem.desc}<br/>{imageItem.body}</Desc>
-                    <Time>
-                        <Tr>
-                            <th>Fri </th>
-                            <th>Sat </th>
-                            <th>Sun </th>
-                            <th>Mon </th>
-                            <th>Tue </th>
-                            <th>Thu</th>
-                        </Tr>
-
-                        <Tr>
-                            <Td> 30 Mar. </Td>
-                            <Td> 31 Mar. </Td>
-                            <Td> 01 Apr. </Td>
-                            <Td> 02 Apr. </Td>
-                            <Td> 03 Apr. </Td>
-                            <Td> 04 Apr. </Td>
-                        </Tr>
-                    </Time>
+                    <Desc> {imageItem.desc}<br/><br/></Desc>
+                    <Last_Sec>
+                    <Left>{imageItem.body}</Left>
+                    <Right><Link to={{
+                        pathname: "/Schedule" + imageItem.id}} >
+                        <Button>Ask for date</Button></Link>
+                        </Right>
+                    </Last_Sec>
                 </Schedules>
+                
+            
         </ImageWrapper>
     
         )

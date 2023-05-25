@@ -1,10 +1,9 @@
 import React ,{useEffect, useState} from "react";
 import { BodySection, LeftSide, RightSide } from "./style";
 import axios from "axios";
-import {AdminButton,SubmittedText,CloseButton,Button,AlarmText,AlarmContainer,Icon2,Icon,Icon1,Header,InputSubmit,RadioWrapper,RadioLabel,RadioButton, UlList,ListItem,ImageWrapper, Image,Schedules, Name,Desc} from "./style.js";
+import {SubmittedText,CloseButton,Button,AlarmText,AlarmContainer,Icon2,Icon,Icon1,Header,InputSubmit,RadioWrapper,RadioLabel,RadioButton, UlList,ListItem,ImageWrapper, Image,Schedules, Name} from "./style.js";
 import Table from "./timetable.js";
 import Footer from '../Footer/index.js';
-import { Link } from "react-router-dom";
 const Schedule=({index})=> {
   const [showAlarm, setShowAlarm] = useState(false);
 
@@ -74,15 +73,15 @@ const UserSelection=()=> {
             checked={selectedOption === 'old'}
             onChange={handleOptionChange}
           />
+          I've seen this doctor before
         </RadioLabel>
-        I've seen this doctor before
+        
       </RadioWrapper>
       </div>
     );
   }
     return (
       <React.Fragment>
-        <Link to="/ScheduleAdmin"> <AdminButton>Admin</AdminButton></Link> 
         <BodySection>
         <LeftSide>
             {PortfolioImages}

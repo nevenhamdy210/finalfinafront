@@ -16,12 +16,13 @@ export const LeftSide = styled.div`
 export const RightSide = styled.div`
     width:78%;
     float:right;
-    background-color:rgba(236, 236, 236, 0.8);
+    background-color:white;rgba(236, 236, 236, 0.8);
     color:gray;
     margin-top:10px;
     height: 430px;
     padding:50px;
-    
+    border-radius: 6px;
+    box-shadow: 0 0 10px  #669999;
 
 `
 
@@ -30,7 +31,12 @@ export const ImageWrapper = styled.div `
     padding-top:30px;
     padding:30px;
     display:block;
-    border:10px solid white;
+    border:2px solid white;
+    background:white;
+    margin-bottom:10px;
+    margin-top:10px;
+    border-radius: 6px;
+    box-shadow: 0 0 8px  #669999;
 `
 
 export const Image = styled.img`
@@ -74,19 +80,21 @@ export const OverlaySpan= styled.button`
 export const Schedules=styled.div`
     padding:5px;
     width: 100%;
-    height:250px;
+    height:233px;
     display:block;
-    border:10px solid white;
-    background-color:rgba(236, 236, 236, 0.8);
+    border-radius: 6px;
+    box-shadow: 0 0 8px  #669999;
+    background-color:white;rgba(236, 236, 236, 0.8);
 
 `
 export const Name=styled.h2`
     font-size:20px;
     color:black;
     text-align:center;
-    background-color:white;
-    text-shadow: 3px 0px lightgray;
-    font-family:  Arial, sans-serif;
+    //background-color:#ddd;
+    //text-shadow: 3px 0px lightgray;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+
 `
 export const Desc=styled.div`
     color:white;
@@ -117,12 +125,13 @@ export const ListItem = styled.li`
 export const TableContainer = styled.table`
   width:100%;
   margin-top:14px;
+  
 `;
 
 export const TableHeader = styled.th`
 padding: 3px;
 text-align: center;
-background-color: #6c757d;
+background-color: #A3C1AD;
 color: #fff;
 font-size:20px;
 `
@@ -153,7 +162,7 @@ width:30%;
 padding:10px;
 background-color:lightgreen;
 color:white;
-color: ${({ selectedCell }) => (selectedCell ? 'green' : 'black')};
+color: ${({ selectedCell }) => (selectedCell ? 'A3C1AD' : 'black')};
 `
 export const Date=styled.td`
 text-align:center;
@@ -241,7 +250,7 @@ export const Button = styled.button`
   margin-right:120px;
   padding:12px 44px;
   float:right;
-  background-color:  #6c757d;
+  background-color: #6c757d;
   color: #FFF;
   border: none;
   border-radius: 4px;
@@ -288,17 +297,20 @@ export const Btn= styled.button`
 
 export const ActionButton = styled.button`
   margin-top:5%;
-  margin-left:3px;
-  margin-right:3px;
+  margin-left:4px;
+  margin-right:0px;
   border-radius:px;
-  padding:10px 14.5%;
-  border:none;
-  background-color:black;
-  color:white;
-  &:hover {
-    background-color:#85d5a5;
+  padding:10px 14.3%;
+  border:1px solid #A3C1AD;
+  border-radius:10px;
+  color:black;
+  background:white;
+font-family:Arial, sans-serif;
+&:hover {
+  background:linear-gradient(to right, #5F9EA0, #A3C1AD);#E1EBEE;#ADD8E6;#E1EBEE;#E6E6FA;
     color: white;
     }
+
 
 `;
 
