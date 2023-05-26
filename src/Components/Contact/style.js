@@ -1,20 +1,20 @@
 import styled from "styled-components";
 
 export const Drop =styled.div`
-    margin-bottom: 5%;
     color: #666;
-    padding-top: 100px;
     padding-bottom: 100px;
     
 `
 
 export const Title =styled.h2`
-    margin-top: 90px;
-    font-size: 60px;
+    margin-top: 50px;
+    font-size: 70px;
+    color:#008080;
+    font-family:Apple Chancery, cursive;
     margin-bottom:0px;
-    text-shadow: 5px 5px lightgray;
+    //text-shadow: 5px 5px #dddd;
     text-align: left;
-    font-family: Roboto, Arial, sans-serif;
+   
 `
 
 export const Span =styled.span`
@@ -72,7 +72,7 @@ export const InputExp =styled(Input)`
 export const TextArea =styled.textarea`
     width: 100%;
     outline: 0;
-    background: #ddd;
+    background: #dddd;
     border-radius: 10px;
     margin-top:10px;
     font-size:20px;
@@ -80,28 +80,54 @@ export const TextArea =styled.textarea`
 
 export const InputSubmit =styled.button`
 position: relative;
-background-color: black;
-color: white;
+background-color: white;
+color: black;
 font-size: 15px;
 padding:15px 45px;
 float:right;
 margin-left:100px;
 margin-top:50px;
 margin-bottom:10px;
-border: none;
+border: 2px solid gray;
+font-family:Apple Chancery, cursive;
 cursor: pointer;
 border-radius: 20px;
 text-align: center;
 &:hover {
-background-color: gray;
+background-color: black;
 color: white;
 }
 `
 export const Icon =styled.i`
-color:red;
+color:#008080;
 margin-top:10px;
 `
 export const SpanIcon =styled.span`
 color:black;
 margin-left:20px;
+`
+export const Header =styled.div`
+    position: absolute;
+    color:white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+`
+
+export const Title2 =styled.h2`
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    font-family:Bradley Hand, cursive;
+   
+`
+export const HeaderSection =styled.div`
+    height:200px;
+    background: linear-gradient(to right, #9907facc,#3204),url('../images2/team.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    position: relative;
+    margin-bottom:10%;
 `

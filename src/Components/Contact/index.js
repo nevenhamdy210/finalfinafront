@@ -1,13 +1,19 @@
 import React from "react";
 import Footer from "../Footer/index.js";
-import {Drop ,Body,Title ,F1,Span ,FormSection,InputForm,InputText,InputEmail,InputExp,TextArea,InputSubmit,Icon, SpanIcon,Style} from'./style.js'
+import {Drop ,Body,Title,Span ,FormSection,InputForm,InputText,InputEmail,InputExp,TextArea,InputSubmit,Icon, SpanIcon,Header,HeaderSection,Title2} from'./style.js'
 
 const Contact =()=> {
     return(
     <div>
     <Drop>
+    <HeaderSection>
+            <Header>
+                <Title2>Contact Us</Title2>
+            </Header>
+        </HeaderSection>
         <div class="container">
         <Body>
+           
             <Title>Contact</Title>
             
             <Span><br/>If you have any questions, do not hesitate to ask them.<br/></Span>

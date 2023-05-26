@@ -13,12 +13,14 @@ export const Logo = styled.div`
     width: 47%;
     float: left;
    display:flex;
+  
    
 `
 
 export const LogoText = styled.h2`
-    font-size: 43px;
-    font-weight: bold
+    font-size: 40px;
+    font-weight: bold;
+    font-family:Apple Chancery, cursive;
 `
 
 export const UlList = styled.ul`
@@ -63,5 +65,6 @@ margin-top:7%;
 border-radius:200px;
 width:50px;
 height:40px;
+margin-right:2%;
 
 `

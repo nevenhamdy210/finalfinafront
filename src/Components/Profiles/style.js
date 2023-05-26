@@ -388,7 +388,7 @@ export const Input =styled.input`
 export const TextArea =styled.textarea`
     width: 60%;
     margin-left:17%;
-    background: #ddd;
+    background:#F0F8FF;#A3C1AD;
     border-radius: 5px;
     margin-top:10px;
     font-size:15px;

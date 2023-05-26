@@ -13,6 +13,8 @@ export const Title =styled.h2`
     font-size: 60px;
     font-weight: bold;
     color: white;
+    font-family:Bradley Hand, cursive;
+   
 `
 export const HeaderSection =styled.div`
     height:200px;
@@ -45,19 +47,20 @@ export const Image = styled.img`
    float:left;
    margin:10%;
    margin-left:15%;
-   height:480px;
-   width:70%;
-   border: 10px solid gray;
-   border-radius: 10px;
+   margin-top:15%;
+   height:500px;
+   width:80%;
+   border: 10px solid lightgray;
+   border-radius: 20px;
 
 `
 export const TitleList = styled.h1`
 
-text-shadow:5px 2px lightgray;
+text-shadow:5px 2px #dddd;
 margin-bottom:10%;
 margin-top:10%;
 margin-left:15%;
-font-family: Roboto, Arial, sans-serif;
+ font-family:Bradley Hand, cursive;
 font-size:45px;
 padding: 0%;
 font-weight:bold;
@@ -71,8 +74,8 @@ list-style: none;
 `
 export const Elements = styled.div`
 color:gray;
-margin-left:15%;
-font-size:25px;
+margin-left:16%;
+font-size:22px;
 
 ` 
 export const ThirdSection =styled.div`
@@ -109,7 +112,7 @@ margin-left:35%;
 ` 
 export const ListRight = styled.ul`
 
-background:#5F9EA0;#008E97;#007791;#72A0C1;#2e279d;
+background:#5F9EA0;
 padding:60px;
 padding-top:18%;
 height:900px;

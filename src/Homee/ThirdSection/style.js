@@ -60,7 +60,7 @@ export const Overlay = styled.div`
     bottom: 0;
     right: 0;
     top:0;
-    background:#5F9EA0;#073980;#5F9EA0;#5F9EA0;#AFDBF5;#008080;rgba(235,84,36 , 0.5);
+    background:#8DA399;#5F9EA0;#073980;#5F9EA0;#5F9EA0;#AFDBF5;#008080;rgba(235,84,36 , 0.5);
     font-size: 15px;
     opacity: 0 ;
     transition: 1s ease;
@@ -88,7 +88,7 @@ export const Header= styled.h1`
 font-size:50px;
 width:100%;
 text-align:center;
-background-color:#5F9EA0;
+background-color:#A3C1AD;
 color:white;
 padding:150px;
 margin-top:0px;

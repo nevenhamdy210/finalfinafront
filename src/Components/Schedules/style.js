@@ -162,9 +162,11 @@ font-weight: bold;
 border:2px solid white;
 width:30%;
 padding:10px;
-background-color:#E1EBEE;
+margin-right:50px;
+margin-top:20px;
+border-radius:10px;
+background-color:black;#ACE1AF;#E1EBEE;
 color:white;
-color: ${({ selectedCell }) => (selectedCell ? 'green' : 'black')};
 `
 export const Date=styled.td`
 text-align:center;
@@ -175,12 +177,12 @@ padding-left:20px;
 
 
 export const RadioWrapper = styled.div`
-  padding:3px;
-  margin:10px;
-  border:2px solid white;
-  width:60%;
-  background-color:#E1EBEE;#F0F8FF;
-  font-size:15px;
+  padding-left:3%;
+  padding:1%;
+  //margin:10px;
+  border:2px solid lightgray;
+  width:40%;
+  font-size:14px;
 `
 export const Header = styled.div`
 
@@ -200,7 +202,7 @@ border-radius: 10px;
 text-align: center;
 font-family:Arial, sans-serif;
 &:hover {
-  background:linear-gradient(to right, #5F9EA0, #A3C1AD);#E1EBEE;#ADD8E6;#E1EBEE;#E6E6FA;
+  background:linear-gradient(to right, #A3C1AD, #A3C1AD);
   color: white;
 }
 `

@@ -14,12 +14,8 @@ const About =()=> {
             <LeftSide>
             <TitleList>Who we are ?</TitleList>
             <Elements>
-            Dedicated to improving the lives of those impacted by autism or other developmental disabilities,
-            we provides comprehensive autism therapy and intervention services to help individuals maximize
-            their potential. we uses the latest and most widely accepted teachings and therapeutic methodologies
-            related to ABA therapy. Our compassionate team has extensive training and experience in designing , developing , implementing ,  and evaluating a wide range of ABA programs for individuals with autism and
-            other developmental disabilities.For over 25 years, we has been a trusted autism therapy center. 
-            Learn more about our autism therapy services today.</Elements>
+            Dedicated to improving the lives of those impacted by autism or other developmental disabilities,we provides comprehensive autism therapy and intervention services to help individuals maximize their potential.<br/><br/> we uses the latest and most widely accepted teachings and therapeutic methodologies
+            related to ABA therapy. <br/> <br/>Our compassionate team has extensive training and experience in designing , developing , implementing ,  and evaluating a wide range <br/>of ABA programs for individuals with autism and other developmental disabilities.For over 25 years, we has been a trusted autism therapy center.<br/><br/> Learn more about our autism therapy services today.</Elements>
             </LeftSide>
             <RightSide>
             <Image src="../images2/who_we_are.jpg" alt="react"/>

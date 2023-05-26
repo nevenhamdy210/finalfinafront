@@ -45,13 +45,13 @@ margin-top:8%;
 `
 export const RightSide = styled.div`
 float:right;
-width:45%;
+width:47%;
 margin-right:5%;
 margin-top:7%;
 ` 
 export const LeftSide = styled.div `
 float:left;
-width:50%;
+width:47%;
 
 `
 
@@ -59,8 +59,8 @@ export const Image = styled.img`
    float:left;
    margin:10%;
    height:600px;
-   width:65%;
-   box-shadow: 60px -40px #E1EBEE;
+   width:63%;
+   box-shadow: 70px -50px #dddd;
   //border-bottom-right-radius: 50%;
    border: #A3C1AD 12px double;
    background-clip: content-box;

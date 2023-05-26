@@ -1,23 +1,11 @@
 import React ,{useEffect, useState} from "react";
 import { BodySection, LeftSide, RightSide } from "./style";
 import axios from "axios";
-import {SubmittedText,CloseButton,Button,AlarmText,AlarmContainer,Icon2,Icon,Icon1,Header,InputSubmit,RadioWrapper,RadioLabel,RadioButton, UlList,ListItem,ImageWrapper, Image,Schedules, Name} from "./style.js";
+import {Icon2,Icon,Icon1,Header,InputSubmit,RadioWrapper,RadioLabel,RadioButton, UlList,ListItem,ImageWrapper, Image,Schedules, Name} from "./style.js";
 import Table from "./timetable.js";
 import Footer from '../Footer/index.js';
 const Schedule=({index})=> {
-  const [showAlarm, setShowAlarm] = useState(false);
-
-  const handleFormSubmit = (event) => {
-    event.preventDefault();
-    setShowAlarm(true);
-  };
-
-  const handleAlarmClose = () => {
-    window.location.reload();
-    setShowAlarm(false);
-
-  };
-
+  
     const [images , setImages] = useState ([])
     useEffect(()=> {
         axios.get('js/data.json').then(res => {setImages (res.data.Doctors)})
@@ -33,7 +21,7 @@ const Schedule=({index})=> {
         </ImageWrapper>
         <Schedules>
         <UlList>
-        <ListItem>  <Icon1 className= "fa fa-hospital-o"></Icon1> {imageItem.desc}</ListItem>
+        <ListItem> <Icon1 className= "fa fa-hospital-o"></Icon1> {imageItem.desc}</ListItem>
         <br/>
         <ListItem><Icon2 className= "fa fa-medkit"></Icon2> {imageItem.body}</ListItem> 
         </UlList>
@@ -89,16 +77,7 @@ const UserSelection=()=> {
         <RightSide>
         <Table/>
           <UserSelection/>
-          <InputSubmit type='submit' onClick={handleFormSubmit} >Submit</InputSubmit>
-          {showAlarm && (
-              <AlarmContainer>
-                <SubmittedText>Submitted Alarm!</SubmittedText>
-                <AlarmText><i class='fa fa-bell-o'></i> Your appointment is submitted </AlarmText>
-                <CloseButton onClick={handleAlarmClose}>Close</CloseButton>
-                <Button onClick={() => { setShowAlarm(false); window.location.reload(); }}>Done</Button>
-              </AlarmContainer>
-            )}
-             
+          <InputSubmit type='submit' onClick={() => { alert("Thank you , Your appointment is sent"); window.location.reload(); }} >Submit</InputSubmit>
            </RightSide>
           </BodySection>
           <Footer/>

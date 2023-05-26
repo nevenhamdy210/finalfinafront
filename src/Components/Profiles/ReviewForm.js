@@ -34,12 +34,10 @@ const ReviewForm = ({ onSubmit,onClose }) => {
       <Form onSubmit={handleSubmit}>
         <CloseIcon onClick={onClose}><i class="fa fa-window-close" aria-hidden="true"></i></CloseIcon>
         <ReviewHeader2><i className="fa fa-comments"></i> Make your Review now</ReviewHeader2>
-        <Label htmlFor="name">Name</Label>
-        <Input type="text" id="name" value={name} onChange={handleNameChange} required/>
-        <br/><br/>
+        <br/>
         <Label htmlFor="comment">Comment</Label><br/>
         <TextArea id="comment" value={comment} onChange={handleCommentChange} required/>
-        <br/><br/>
+        <br/><br/><br/><br/>
         
         <RatingContainer>
         <Label>Rating : </Label> 

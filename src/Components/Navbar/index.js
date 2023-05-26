@@ -8,8 +8,8 @@ const Navbar = () => {
     <div className="container">
         
         <Logo>
-        <LogoImg src="../images/logo2.jpg" alt="react"/>
-         <LogoText>Autism</LogoText>
+        <LogoImg src="../images/logo_dark2.png" alt="react"/>
+         <LogoText> Autism</LogoText>
         </Logo>
         
        
