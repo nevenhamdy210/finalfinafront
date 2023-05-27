@@ -29,7 +29,7 @@ font-family:OCR A Std, monospace;
 `
 export const FooterDesc =styled.div` 
 font-size:20px;
-width:100%;
+width:97.4%;
 background:rgba(0, 0, 0, 0.2);
 background: linear-gradient(to top,rgba(0, 0, 0, 0.4) ,black);
 color:white;
