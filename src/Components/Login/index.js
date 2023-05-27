@@ -1,67 +1,94 @@
-import React ,{Component} from "react";
-import "./style2.css"
 
-class Login extends Component{
-    render(){
-        return(
-            <div>
-              <div className="login-wrap">
-	<div className="login-html">
-		<input id="tab-1" type="radio" name="tab" className="sign-in" checked/><label for="tab-1" className="tab">Sign In</label>
-		<input id="tab-2" type="radio" name="tab" className="sign-up"/><label for="tab-2" className="tab">Sign Up</label>
-		<div className="login-form">
-			<div className="sign-in-htm">
-				<div className="group">
-					<label for="user" className="label">Username</label>
-					<input id="user" type="text" className="input"/>
-				</div>
-				<div className="group">
-					<label for="pass" className="label">Password</label>
-					<input id="pass" type="password" className="input" data-type="password"/>
-				</div>
-				<div className="group">
-					<input id="check" type="checkbox" className="check" checked/>
-					<label for="check"><span className="icon"></span> Keep me Signed in</label>
-				</div>
-				<div className="group">
-					<input type="submit" className="button" value="Sign In"/>
-				</div>
-				<div className="hr"></div>
-				<div className="foot-lnk">
-					<a href="#forgot">Forgot Password?</a>
-				</div>
-			</div>
-			<div className="sign-up-htm">
-				<div className="group">
-					<label for="user" className="label">Username</label>
-					<input id="user" type="text" className="input"/>
-				</div>
-				<div className="group">
-					<label for="pass" className="label">Password</label>
-					<input id="pass" type="password" className="input" data-type="password"/>
-				</div>
-				<div className="group">
-					<label for="pass" className="label">Repeat Password</label>
-					<input id="pass" type="password" className="input" data-type="password"/>
-				</div>
-				<div className="group">
-					<label for="pass" className="label">Email Address</label>
-					<input id="pass" type="text" className="input"/>
-				</div>
-				<div className="group">
-					<input type="submit" className="button" value="Sign Up"/>
-				</div>
-				<div className="hr"></div>
-				<div className="foot-lnk">
-					<label for="tab-1">Already Member?</label>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-            </div>
-        )
+import React, { useState } from "react";
+import axios from 'axios';
+import { Container , Form ,  Title , Input , Button , DropdownLink , DropdownContainer , DropdownButton , DropdownContent , TriangleRight  } from './Style.js'
+
+const options = [
+  { label: 'Specialist', link: '/SpecialistSignUpForm' },
+  { label: 'Parent', link: '/ParentSignUpForm' },
+  { label: 'Patient', link: '/PatientSignUpForm' },
+];
+
+
+const Login = () => {
+
+  const [isOpen, setIsOpen] = useState(false);
+
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [data , setData] = useState(null)
+
+    const handleSignIn = async (e) => {
+      e.preventDefault();
+      try {
+        const response = await axios.post('http://localhost:8000/api/signin/', {
+        email,
+        password,
+      });
+      // For Store And Save Data In LocalStorage
+      setData(response.data)
+      setAuther(response.data)
+      console.log(response.data);
+      window.location.replace("http://localhost:3000/")
+    } catch (error) {
+      console.error(error);
     }
-}
+  };
+
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
+
+  // SetAuther 
+  const setAuther = (data)=>{
+    localStorage.setItem("user" , JSON.stringify(data))
+  }
+
+  // Karim Code
+  const loginHandler = (e)=>{
+    e.preventDefault() ; 
+    let data = {
+      email 
+      ,password
+    }
+      setAuther(data) ; 
+      window.location.replace("http://localhost:3000/")
+
+  }
+  // For Logout 
+  const logout = ()=>{
+    localStorage.removeItem("user") ; 
+  }
+
+
+  return (
+    <>
+    <Container>
+      <TriangleRight></TriangleRight>
+      <Form  onSubmit={handleSignIn}>
+        <Title>Sign In</Title>
+        <Input type="email" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} />
+        <Input type="password" placeholder="Password" value={password} onChange={e => setPassword(e.target.value)} />
+        <div>
+        <Button type="submit"  >Sign In</Button>
+        <DropdownContainer>
+        <DropdownButton onClick={toggleDropdown}>Create new account</DropdownButton>
+          <DropdownContent isOpen={isOpen}>
+            {options.map(({ label, link }) => (
+              <DropdownLink key={label} to={link} >
+                {label}
+              </DropdownLink>
+          ))}
+          </DropdownContent>
+        </DropdownContainer>
+        </div>
+      </Form>
+    </Container>
+    </>
+  );
+};
+ 
+
 
 export default Login;
+

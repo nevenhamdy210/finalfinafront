@@ -21,7 +21,8 @@ const Specialist=({index})=> {
           <Schedules>
           <ImageWrapper key={imageItem.id}>
           <Image src={imageItem.image} alt=""/>
-          <Name>{imageItem.name}&nbsp;&nbsp;<Link to="/ScheduleAdmin"> <i class="fa fa-edit"></i></Link></Name>
+          <Name>{imageItem.name}&nbsp;&nbsp;<Link to={{
+                        pathname: "/EditSpecialistProfile" }} ><i class="fa fa-edit"></i></Link></Name>
           </ImageWrapper>
           <IconSection>
             
@@ -90,14 +91,14 @@ const Specialist=({index})=> {
             <RightSide>
             {PortfolioImages}
             <Sec1>
-             
-            <Button><i className="fa fa-check"></i> Check Appointments</Button>
+            <Link to={{
+                        pathname: "/SpecialistAppointments" }} >
+            <Button><i className="fa fa-check"></i> Check Appointments</Button></Link> 
             <br/><br/>
             
             <Link to={{
                         pathname: "/ScheduleAdmin" + index}} ><Button><i className="fa fa-clock-o"></i> Schedule Appointments</Button></Link>
             </Sec1>
-            
             </RightSide>
             </BodySection>
             <Footer/>

@@ -73,10 +73,10 @@ export const Schedules=styled.div`
     padding:5px;
     width: 100%;
     height:430px;  
-    background-color:white;
     border-radius: 20px;
-    box-shadow: 0 0 5px  ; 
+    box-shadow: 0 0 5px ; 
     margin-bottom:65px;
+    
 `
 export const Name=styled.h2`
     font-size:20px;

@@ -5,7 +5,7 @@ margin-top:10%;
 padding-top:5%;
 color: white; 
 background:#A3C1AD;
-height:80vh;
+height:70vh;
 `
 export const Logo =styled.img`
 
@@ -22,7 +22,8 @@ font-size:45px;
 color:white;
 font-family:OCR A Std, monospace;
 &:hover {
-    color:gray;
+    color:black;
+    font-size:60px;
     }
 
 `

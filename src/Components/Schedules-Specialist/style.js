@@ -14,12 +14,12 @@ export const LeftSide = styled.div`
     height: 380px;
 `
 export const RightSide = styled.div`
-    width:78%;
+    width:68%;
     float:right;
     background-color:white;rgba(236, 236, 236, 0.8);
     color:gray;
     margin-top:10px;
-    height: 430px;
+    height: 400px;
     padding:50px;
     border-radius: 6px;
     box-shadow: 0 0 10px  #669999;
@@ -27,7 +27,7 @@ export const RightSide = styled.div`
 `
 
 export const ImageWrapper = styled.div `
-    width: 100%;
+    width: 85%;
     padding-top:30px;
     padding:30px;
     display:block;
@@ -79,9 +79,10 @@ export const OverlaySpan= styled.button`
 `
 export const Schedules=styled.div`
     padding:5px;
-    width: 100%;
-    height:233px;
+    width: 105%;
+    height:280px;
     display:block;
+    padding-top:20px;
     border-radius: 6px;
     box-shadow: 0 0 8px  #669999;
     background-color:white;rgba(236, 236, 236, 0.8);
@@ -300,7 +301,7 @@ export const ActionButton = styled.button`
   margin-left:4px;
   margin-right:0px;
   border-radius:px;
-  padding:10px 14.3%;
+  padding:8px 14%;
   border:1px solid #A3C1AD;
   border-radius:10px;
   color:black;

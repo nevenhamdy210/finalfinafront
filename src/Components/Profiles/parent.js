@@ -1,7 +1,7 @@
 import React ,{useEffect, useState} from "react";
 import { IconSection,Icon4,BodySection, H1, LeftSide,TableContainer, RightSide, Sec1, Sec3, TableHeader,TableRow,TableCell, AddButton } from "./style";
 import axios from "axios";
-import {Button,Header,HeaderSection,IconP3,IconP4,Iconp5,UlList,ListItem,ImageWrapper, Image,Schedules, Name,Image3,Header_child_list,Button_parent} from "./style.js";
+import {Header,HeaderSection,IconP3,IconP4,Iconp5,UlList,ListItem,ImageWrapper, Image,Schedules, Name,Image3,Header_child_list,Button_parent} from "./style.js";
 import Footer from '../Footer/index.js';
 import { Link } from "react-router-dom";
 
@@ -17,7 +17,7 @@ const Parent=({index})=> {
             <TableRow key={cellItem.id}>
             <TableCell ><Image3 src={cellItem.cell1_img} /></TableCell>
             <TableCell >{cellItem.cell2_name}</TableCell> 
-            <TableCell ><Link to="/"><i class="fa fa-edit"  title="edit the data of child"></i> </Link>&nbsp;&nbsp;<Link to="/"><i class="fa fa-trash" aria-hidden="true"  title="delete the data of child"></i></Link></TableCell>
+            <TableCell ><Link to="/EditPatientProfile"><i class="fa fa-edit"  title="edit the data of child"></i> </Link>&nbsp;&nbsp;<Link to="/"><i class="fa fa-trash" aria-hidden="true"  title="delete the data of child"></i></Link></TableCell>
             </TableRow>
           </React.Fragment>
         )})
@@ -37,7 +37,9 @@ const Parent=({index})=> {
           <Schedules>
           <ImageWrapper key={userInfo.id}>
           <Image src={userInfo.image} alt=""/>
-          <Name>{userInfo.name}&nbsp;&nbsp;<Link to="/ScheduleAdmin"> <i class="fa fa-edit"></i></Link></Name>
+          <Name>{userInfo.name}&nbsp;&nbsp;<Link to={{
+                        pathname: "/EditParentProfile" }} > 
+                 <i class="fa fa-edit"></i></Link></Name>
           </ImageWrapper>
           <IconSection>
             
@@ -84,7 +86,7 @@ const Parent=({index})=> {
                 {TimeTablee}
             </tbody>
             </TableContainer>
-            <AddButton><i className="fa fa-plus" title="add new child"></i> Add</AddButton>
+            <Link to="/PatientSignUpForm"><AddButton><i className="fa fa-plus" title="add new child"></i> Add</AddButton></Link>
     </div>
             </Sec3>
             </LeftSide> 
@@ -93,8 +95,8 @@ const Parent=({index})=> {
             <RightSide>
             {PortfolioImages}
             <Sec1>
-             
-            <Link to="/questionnaire"><Button_parent><i className="fa fa-clock-o"></i> Check Appointments Status</Button_parent>  </Link>
+            
+            <Link to="/ParentAppointments"><Button_parent><i className="fa fa-clock-o"></i> Check Appointments Status</Button_parent>  </Link>
             <br/><br/>
             </Sec1>
             

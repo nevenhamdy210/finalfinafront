@@ -19,7 +19,7 @@ const Navbar = () => {
             <ListItem><LinkItem to="/">Home</LinkItem></ListItem>
             <ListItem><LinkItem to="/appointment">Appointments </LinkItem></ListItem>
             <ListItem><LinkItem to="/questionnaire">Questionnaire </LinkItem></ListItem>
-            <ListItem><Anchor href="#">Treatments </Anchor></ListItem>
+            <ListItem><Anchor href="/Treatments">Treatments </Anchor></ListItem>
             <ListItem><LinkItem to="/About">About</LinkItem></ListItem>
             <ListItem><LinkItem to="/contact">Contact</LinkItem></ListItem>
             <ListItem><LinkItem to="/Login">Login</LinkItem></ListItem>

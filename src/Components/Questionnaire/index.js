@@ -1,44 +1,128 @@
-import React from "react";
-import Footer from "../Footer/index.js";
 
-//import './style.css';
+import axios from "axios";
+import React , {useState , useEffect} from "react";
+import Footer from "../Footer/index.js";
+import { Body , Textbox , Form , Banner  , Span  , Button , BtnBlock , Container , Question , AnswerOption , RadioInput  } from'./Style.js';
+
 
 const Questionnaire = () => {
+
+  const [ questions , setQuestions ] = useState([])
+  const [ answers , setAnswers] = useState([]);
+
+  const handleAnswerChange = (questionId, optionId) => {
+    const newAnswers = [...answers];
+    const index = newAnswers.findIndex((a) => a.questionId === questionId);
+    if (index === -1) {
+      newAnswers.push({ questionId, optionId });
+    } else {
+      newAnswers[index].optionId = optionId;
+    }
+    setAnswers(newAnswers);
+  };
+
+  const handleSubmit = () => {
+    console.log('Answers:', answers);
+    // Send answers to server, etc.
+  };
+
+  useEffect ( ()=> {
+    axios.get('js/data.json').then(res =>{setQuestions(res.data.questions)})
+  } , [] )
+
+  const autismQuestions = questions.map( (questionItem) => {
+    return(
+      <fieldset>
+        
+        <legend>Questions</legend>
+     
+        <Container>
+        {questionItem.id <15 ?(
+          <div key={questionItem.id}>
+            <Question>{questionItem.question}</Question>
+            
+            {questionItem.options.map((o) => (
+              <AnswerOption key={o.id}>
+                <RadioInput
+                  type="radio"
+                  name={`question-${questionItem.id}`}
+                  value={o.id}
+                  checked={
+                    answers.find((a) => a.questionId === questionItem.id)?.optionId === o.id
+                  }
+                  onChange={() => handleAnswerChange(questionItem.id, o.id)}
+                  required
+                />
+                <Span>{o.text}</Span>
+                
+              </AnswerOption>
+            ))}
+          </div>
+         ) : (
+          <div key={questionItem.id}>
+          <Question>{questionItem.question}</Question>
+            <AnswerOption>
+              <RadioInput
+                type={questionItem.type}
+                name={`question-${questionItem.id}`}
+                onChange={(e) => handleAnswerChange(questionItem.id, e.target.value)}
+                required 
+              />              
+            </AnswerOption>
+        </div>
+         )}
+      </Container>
+          
+        </fieldset>
+    )
+  } )
+
   return (
   <React.Fragment>
-    <div>
-    <div className="testbox">
-      <form action="/">
-        <div className="banner"></div>
+    <Body>
+    <Textbox>
+      <Form action="/">
+        <Banner></Banner>
         <br/>
-        <fieldset>
-          <legend>Questionsn</legend>
-
-          <div className="question">
-            <label>Qestion 1</label>
-            <div className="question-answer">
-              <div>
-                <input type="radio" value="none" id="radio_1" name="physician"/>
-                <label htmlFor="radio_1" className="radio"><span>Yes</span></label>
-              </div>
-              <div>
-                <input  type="radio" value="none" id="radio_3" name="physician"/>
-                <label htmlFor="radio_3" className="radio"><span>No</span></label>
-              </div>
-
-            </div>
-          </div>
-
-        </fieldset>
-        <div className="btn-block">
-          <button type="submit" href="/">Submit</button>
-        </div>
-      </form>
-    </div>
-    </div>
+        {autismQuestions}
+        <BtnBlock>
+          <Button type="submit" onClick={handleSubmit}>Submit</Button>
+        </BtnBlock>
+      </Form>
+    </Textbox>
+    </Body>
     <Footer/>
   </React.Fragment>
   );
 }
 
 export default Questionnaire;
+
+
+/**
+ *  const autismQuestions = questions.map( (questionItem) => {
+    return(
+      <fieldset>
+          <legend>Questions</legend>
+     
+          <div className="question"  key={questionItem.id}>
+            <Question>{questionItem.question}</Question>
+            {questionItem.options.map((o) => (
+              <div className="question-answer" key={o.id}>
+                <div>
+                  <InputRadio type="radio" name="physician" id={o.id} value="none"
+                    checked={
+                      answers.find((a) => a.questionId === questionItem.id)?.optionId === o.id
+                    }
+                    onChange={() => handleAnswerChange(questionItem.id, o.id)}
+                  />
+                  <LabelRadio htmlFor={o.id} ><Span>{o.text}</Span></LabelRadio>
+                </div>
+              </div>
+            ))}
+          </div>
+          
+        </fieldset>
+    )
+  } )
+ */

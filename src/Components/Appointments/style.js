@@ -137,7 +137,8 @@ padding-top:10px;
 `
 export const Last_Sec=styled.div`
 
-margin-left:5%;
+margin-left:3%;
+margin-right:5%;
 margin-top:2%;
 color:black;
 border:1px solid black;
@@ -155,6 +156,8 @@ export const Right=styled.div`
 text-align:center;
 color:black;
 width:40%;
+margin-right:8%;
+margin-top:5%;
 float:right;
 `
 export const Button=styled.button`
@@ -164,11 +167,10 @@ border-radius: 10px;
 border:none; 
 font-size:24px;
 color:white;
-margin-top:10%;
+margin-right:30%;
 font-family:Apple Chancery, cursive;
 //background:linear-gradient(to right, #A3C1AD, #008080);
 background:linear-gradient(to right, #A3C1AD, #8DA399);#E1EBEE;#ADD8E6;#E1EBEE;#E6E6FA;    ;
-
 &:hover {
     background:black;
     color: white;

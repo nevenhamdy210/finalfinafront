@@ -1,5 +1,5 @@
 import React ,{useEffect, useState} from "react";
-import { IconSection,Icon4,BodySection, H1, LeftSide,TableContainer, RightSide, Sec1, Sec3, TableHeader,TableRow,TableCell, AddButton, TableContainer2 } from "./style";
+import { IconSection,Icon4,BodySection, H1, LeftSide, RightSide, Sec1, Sec3, TableHeader,TableRow,TableCell, TableContainer2 } from "./style";
 import axios from "axios";
 import {Button,Header,HeaderSection,IconP3,IconP4,Iconp5,UlList,ListItem,ImageWrapper, Image,Schedules, Name,Image3,Header_child_list,Button_parent} from "./style.js";
 import Footer from '../Footer/index.js';
@@ -36,7 +36,8 @@ const Child=({index})=> {
           <Schedules>
           <ImageWrapper key={userInfo.id}>
           <Image src={userInfo.image} alt=""/>
-          <Name>{userInfo.name}&nbsp;&nbsp;<Link to="/ScheduleAdmin"> <i class="fa fa-edit"></i></Link></Name>
+          <Name>{userInfo.name}&nbsp;&nbsp;<Link to={{
+                        pathname: "/EditPatientProfile" }} > <i class="fa fa-edit"></i></Link></Name>
           </ImageWrapper>
           <br/> <hr/><br/>
           <UlList>
@@ -85,7 +86,7 @@ const Child=({index})=> {
             {PortfolioImages}
             <Sec1>
              
-            <Link to="/questionnaire"><Button_parent><i class="fa fa-gamepad"></i> let's play</Button_parent>  </Link>
+            <Link to="/Treatments"><Button_parent><i class="fa fa-gamepad"></i> let's play</Button_parent>  </Link>
             <br/><br/>
             </Sec1>
             
