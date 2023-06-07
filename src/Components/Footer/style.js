@@ -4,7 +4,7 @@ export const FooterSection =styled.div`
 margin-top:10%;
 padding-top:5%;
 color: white; 
-background:#A3C1AD;
+background: linear-gradient(to right, #A3C1AD,#A3C1AD);#A3C1AD;
 height:70vh;
 `
 export const Logo =styled.img`
@@ -28,24 +28,22 @@ font-family:OCR A Std, monospace;
 
 `
 export const FooterDesc =styled.div` 
-font-size:20px;
-width:97.4%;
+font-size:15px;
 background:rgba(0, 0, 0, 0.2);
-background: linear-gradient(to top,rgba(0, 0, 0, 0.4) ,black);
+background: black;
 color:white;
 margin-top:13%;
 text-align:center;
 font-family:Comic Sans MS, Comic Sans, cursive;
-padding:20px;
+padding:0.5%;
 `
 
 export const Icon =styled.i`
 margin-top:10%;
-margin-right:14px;
-margin-left:10px;
+margin-right:6%;
+margin-left:3%;
 font-size:20px;
-//background-color:white;
-padding:10px;
+padding:4%;
 border-radius: 20px;
 color:black;
 &:hover {
@@ -58,7 +56,7 @@ margin-top:10%;
 margin-right:60%;
 font-size:28px;
 //background-color:white;
-padding:10px;
+padding:4%;
 border-radius: 20px;
 color:black;
 display:flex;
@@ -70,14 +68,13 @@ display:flex;
 export const ProfileList = styled.ul`
     list-style: none;
     width: 20%;
-    margin-right:5%;
-    margin-top:5%;
+    margin-right:4%;
+    margin-top:3%;
     float: right;
 `
 
 export const ProfileItem= styled.li`
-    margin-bottom:10px;
-    margin-top:px;
+    margin-bottom:8%;
     color:gray;rgba(0, 0, 0, 0.5);
     font-family:Bradley Hand, cursive;
     font-size:15px;
@@ -86,7 +83,6 @@ export const ProfileItem= styled.li`
 
 export const ProfileItemSpan= styled.div`
   
-    width: px;
     color:black;
     font-family:Luminari, fantasy;
 `

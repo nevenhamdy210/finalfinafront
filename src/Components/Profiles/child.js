@@ -1,7 +1,7 @@
 import React ,{useEffect, useState} from "react";
-import { IconSection,Icon4,BodySection, H1, LeftSide, RightSide, Sec1, Sec3, TableHeader,TableRow,TableCell, TableContainer2 } from "./style";
+import { BodySection, H1, LeftSide, RightSide, Sec1, Sec3, TableHeader,TableRow,TableCell, TableContainer2 } from "./style";
 import axios from "axios";
-import {Button,Header,HeaderSection,IconP3,IconP4,Iconp5,UlList,ListItem,ImageWrapper, Image,Schedules, Name,Image3,Header_child_list,Button_parent} from "./style.js";
+import {TableDiv,TBody,Image3,Header,HeaderSection,IconP3,Iconp5,UlList,ListItem,ImageWrapper, Image,Schedules, Name,Header_child_list,Button_parent} from "./style.js";
 import Footer from '../Footer/index.js';
 import { Link } from "react-router-dom";
 
@@ -15,8 +15,9 @@ const Child=({index})=> {
       return(
           <React.Fragment>
             <TableRow key={cellItem.id}>
-            <TableCell >{cellItem.name_game} </TableCell>
-            <TableCell >{cellItem.level}</TableCell> 
+            <TableCell ><Image3 src={cellItem.token} /></TableCell>
+            <TableCell >{cellItem.name} </TableCell>
+            <TableCell >{cellItem.quantity}</TableCell> 
             </TableRow>
           </React.Fragment>
         )})
@@ -63,21 +64,23 @@ const Child=({index})=> {
             </Header>
             </HeaderSection>
             <Sec3>
-            <div>
-                <Header_child_list><i className="fa fa-list"> </i> List of Games</Header_child_list>
+            
+            <Header_child_list><i className="fa fa-list"> </i> List of Games</Header_child_list>
+            <TableDiv>
             <TableContainer2>
             <thead>
                 <tr>
-                <TableHeader> game_name<br/></TableHeader>
-                <TableHeader> Level<br/></TableHeader>
+                <TableHeader> Token<br/></TableHeader>
+                <TableHeader> Name<br/></TableHeader>
+                <TableHeader> Quantity<br/></TableHeader>
                 
                 </tr>
             </thead>
-            <tbody>
+            <TBody>
                 {TimeTablee}
-            </tbody>
+            </TBody>
             </TableContainer2>
-            </div>
+            </TableDiv>
             </Sec3>
             </LeftSide> 
 

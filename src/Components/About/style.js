@@ -17,8 +17,8 @@ export const Title =styled.h2`
    
 `
 export const HeaderSection =styled.div`
-    height:200px;
-    background: linear-gradient(to right, #9907facc,#3204),url('../images2/team.jpg');
+    height:300px;
+    background:url('../images/about.png');
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -67,7 +67,7 @@ font-weight:bold;
 `
 export const List = styled.ul`
 text-align:left;
-margin-top:40px;
+margin-top:15%;
 font-size:40px;
 list-style: none;
  padding: 0%;
@@ -84,6 +84,7 @@ height:900px;
 display:block;
 margin-bottom:22%;
 margin-top:6%;
+
 `
 
 export const ListElements = styled.li`
@@ -113,10 +114,11 @@ margin-left:35%;
 export const ListRight = styled.ul`
 
 background:#5F9EA0;
-padding:60px;
-padding-top:18%;
-height:900px;
-margin:15%;
+padding:10%;
+padding-top:15%;
+height:700px;
+margin:10%;
+
 ` 
 export const TitleRight =styled.h2`
     font-size: 40px;
@@ -130,16 +132,17 @@ export const TitleLeft =styled.h2`
     color: white;
     `
 export const ListLeft = styled.ul`
-background:#A3C1AD;#72A0C1;#499afa;
-padding:60px;
-padding-top:18%;
-height:900px;
-margin:15%;
+background:#A3C1AD;
+padding:10%;
+padding-top:15%;
+height:700px;
+margin:12%;
+margin-top:10%;
 ` 
 export const Icon =styled.i`
 margin-right:5%;
 font-size:28px;
-padding:10px;
+padding:3%;
 border-radius: 20px;
 color:white;
 &:hover {

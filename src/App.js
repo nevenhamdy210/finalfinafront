@@ -27,6 +27,8 @@ import ParentAppointments from "./Components/Profiles/AppointmentsHandling/Paren
 import ParentSignUpForm from "./Components/Login/ParentSignUpForm";
 import PatientSignUpForm from "./Components/Login/PatientSignUpForm";
 import SpecialistSignUpForm from "./Components/Login/SpecialistSignUpForm";
+import Game from "./Components/Treatments/Game";
+
 class App extends Component {
 
   state={
@@ -97,6 +99,9 @@ class App extends Component {
        <Route path="/Understanding_Autism2" element={<Understanding_Autism2/>}/>
        <Route path="/Understanding_Autism3" element={<Understanding_Autism3/>}/>
        <Route path="/Understanding_Autism4" element={<Understanding_Autism4/>}/>
+       <Route path='/Game1' element={<Game index={1}/>} />
+       <Route path='/Game2' element={<Game index={2}/>} />
+       <Route path='/Game3' element={<Game index={3}/>} />
     </Routes>
     </BrowserRouter>
     </Body>

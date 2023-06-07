@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import {PageContainer , Title , AppointmentTable , TableHeader , TableRow , TableCell , Button } from "./Style.js"
 import Footer from '../../Footer/index.js';
-
+import { TBody } from '../style.js';
 const SpecialistAppointments = () => {
   const [appointments, setAppointments] = useState([]);
 
@@ -41,6 +41,7 @@ const SpecialistAppointments = () => {
     <>
     <PageContainer>
       <Title>Doctor Appointment Page</Title>
+      <TBody>
       <AppointmentTable>
         <thead>
           <tr>
@@ -64,7 +65,9 @@ const SpecialistAppointments = () => {
           ))}
         </tbody>
       </AppointmentTable>
+      </TBody>
     </PageContainer>
+
     <Footer/>
     </>
   );

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const PortfolioSection = styled.div` 
     background: #f8f8f8;
-    padding-top: 20px; 
+    padding-top: 5%; 
     overflow: hidden;
     //border-radius:30px;
     `
@@ -41,7 +41,7 @@ export const ImageWrapper = styled.div `
     float: left;
     font-size: 0;
     position: relative;
-    margin-left:10px;
+    margin-left:0.5%;
     &:hover > div {
         opacity: 0.8
     }
@@ -75,22 +75,21 @@ export const OverlaySpan= styled.span`
     transform: translate(-50%,-50%);
     background: #fff;
     display: block;
-    padding: 0px 0px;
+    padding:0 10px 10px;
     background:#5F9EA0;#073980;#5F9EA0;#5F9EA0;#AFDBF5;#008080;
     border-radius:30px;
     color:white;
-  transition-delay: 1s;
+  transition-delay: 0.5s;
 `
 export const Box= styled.div`
     border-radius:30px;
 `
 export const Header= styled.h1`
 font-size:50px;
-width:100%;
-text-align:center;
 background-color:#A3C1AD;
 color:white;
-padding:150px;
+padding:8%;
+text-align:center;
 margin-top:0px;
 margin-bottom:0px;
 font-family:Comic Sans MS, Comic Sans, cursive;
@@ -103,7 +102,7 @@ font-family:Comic Sans MS, Comic Sans, cursive;
 export const Body= styled.div`
 margin:20%;
 margin-top:5%;
-margin-bottom:10px;
+margin-bottom:6%;
 text-align:left;
 float:left;
 `

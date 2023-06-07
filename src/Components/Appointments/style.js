@@ -6,14 +6,14 @@ export const PortfolioSection = styled.div`
 `
 
 export const PortfolioTitle = styled.h2`
-    padding:140px;
+    padding:10%;
     text-align:center;
     margin-top:0;
     font-size: 60px;
     color:white;
     //background-color:#ddd;
     font-family: Roboto, Arial, sans-serif;
-    background:url('../images/date1.jpg');
+    background:linear-gradient(to right, #9907facc,#3204),url('../images/date1.jpg');
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -54,13 +54,11 @@ export const ImageWrapper = styled.div `
     margin-top:5%;
     margin-bottom:3%;
     font-size: 0;
-    padding-top:30px;
+    padding-top:5%;
     height:450px;
     position: relative;
-    //background:linear-gradient(to right, #9907facc,#3204),url('../images2/time2.jpg');
     background-size: cover;
     background-position: center;
-    //background:#3204;
     box-shadow: 4px 4px 6px 6px rgba(0, 0, 0, 0.1);
 `
 export const Hover = styled.div `
@@ -116,7 +114,7 @@ export const OverlaySpan= styled.button`
 
 `
 export const Schedules=styled.div`
-padding:10px;
+padding:3%;
 width: 100%;
 height:200px;
 border-radius:10px;
@@ -133,7 +131,7 @@ export const Desc=styled.div`
 color:gray;
 font-size:20px;
 text-align:center;
-padding-top:10px;
+padding-top:5%;
 `
 export const Last_Sec=styled.div`
 

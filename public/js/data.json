@@ -184,11 +184,34 @@
             "desc":"Psychiatrist",
             "body":"Specialties : {Autism} {ADHD} {Neuropsychology}  {Bipolar} {disorder}  {Anxiety} {Depression} ",
             "age":39
+        },
+        {
+            "id":10,
+            "image": "/images2/doc9.jpg",
+            "name":"Dr Carl Rideout",
+            "desc":"Psychiatrist",
+            "body":"Specialties : {Autism} {ADHD} {Neuropsychology}  {Bipolar} {disorder}  {Anxiety} {Depression} ",
+            "age":39
+        },
+        {
+            "id":11,
+            "image": "/images2/doc9.jpg",
+            "name":"Dr Carl Rideout",
+            "desc":"Psychiatrist",
+            "body":"Specialties : {Autism} {ADHD} {Neuropsychology}  {Bipolar} {disorder}  {Anxiety} {Depression} ",
+            "age":39
         }
     ],
     "Reviews" : [
         {
             "id":1,
+            "image": "/images2/prof_review.jpg",
+            "Name":"Hadia Joseef",
+            "Comment":" so friendly and best doctor at all."
+            
+        },
+        {
+            "id":3,
             "image": "/images2/prof_review.jpg",
             "Name":"Hadia Joseef",
             "Comment":" so friendly and best doctor at all."
@@ -269,35 +292,51 @@
     "games" : [
         {
             "id": 1,
-            "name_game":"game 1",
-            "level":"2"
+            "token":"/images2/prof_review.jpg",
+            "name":"game 1",
+            "quantity":"2"
         },
         {
             "id": 2,
-            "name_game":"game 2",
-            "level":"1"
+            "token":"/images2/prof_review.jpg",
+            "name":"game 2",
+            "quantity":"1"
         },
         {
             "id": 3,
-            "name_game":"game 3",
-            "level":"3"
+            "token":"/images2/prof_review.jpg",
+            "name":"game 3",
+            "quantity":"3"
         },
         {
             "id": 4,
-            "name_game":"game 4",
-            "level":"1"
+            "token":"/images2/prof_review.jpg",
+            "name":"game 4",
+            "quantity":"1"
+        },{
+            "id": 2,
+            "token":"/images2/prof_review.jpg",
+            "name":"game 2",
+            "quantity":"1"
         },
         {
-            "id": 5,
-            "name_game":"game 5",
-            "level":"1"
+            "id": 3,
+            "token":"/images2/prof_review.jpg",
+            "name":"game 3",
+            "quantity":"3"
+        },
+        {
+            "id": 4,
+            "token":"/images2/prof_review.jpg",
+            "name":"game 4",
+            "quantity":"1"
         }
 
     ],
     "questions" : [
         {
             "id": 1,
-            "question": "I often notice small sounds when others do not",
+            "question": "Does the child respond when you call his/her name?",
             "options": [
                 { "id": 1, "text": "Yes" },
                 { "id": 2, "text": "No" }
@@ -305,7 +344,7 @@
         },
         {
             "id": 2,
-            "question": "I usually concentrate more on the whole picture, rather than the small details",
+            "question": "Is it easy to get eye contact from the child?",
             "options": [
                 { "id": 1, "text": "Yes" },
                 { "id": 2, "text": "No" }
@@ -313,7 +352,7 @@
         },
         {
             "id": 3,
-            "question": "I find it easy to do more than one thing at once",
+            "question": "Does the child point to objects he/she wants?",
             "options": [
                 { "id": 1, "text": "Yes" },
                 { "id": 2, "text": "No" }
@@ -321,22 +360,22 @@
         },
         {
             "id": 4,
-            "question": "If there is an interruption, I can switch back to what I was doing very quickly",
+            "question": "Does the child point to draw your attention to his/her interests? ",
             "options": [
                 { "id": 1, "text": "Yes" },
                 { "id": 2, "text": "No" }
               ]
         },
-        {
+{
             "id": 5,
-            "question": "I find it easy to read between the lines when someone is talking to me",
+            "question": "Does the child show pretense? ",
             "options": [
                 { "id": 1, "text": "Yes" },
                 { "id": 2, "text": "No" }
               ]
         }, {
             "id": 6,
-            "question": "I know how to tell if someone listening to me is getting bored",
+            "question": "Is it easy for the child to follow where you point/look?",
             "options": [
                 { "id": 1, "text": "Yes" },
                 { "id": 2, "text": "No" }
@@ -344,14 +383,14 @@
         },
         {
             "id": 7,
-            "question": "When I’m reading a story, I find it difficult to work out the character’s intentions",
+            "question": "Is it easy for the child to follow where you point/look?",
             "options": [
                 { "id": 1, "text": "Yes" },
                 { "id": 2, "text": "No" }
               ]
         }, {
             "id": 8,
-            "question": "I like to collect information about categories of things (e.g. types of cars, types of bird, types of train, types of plant, etc)",
+            "question": "Has the child spoken his/her first words?",
             "options": [
                 { "id": 1, "text": "Yes" },
                 { "id": 2, "text": "No" }
@@ -359,14 +398,14 @@
         },
         {
             "id": 9,
-            "question": "I find it easy to work out what someone is thinking or feeling just by looking at their face",
+            "question": "Does the child use basic gestures? ",
             "options": [
                 { "id": 1, "text": "Yes" },
                 { "id": 2, "text": "No" }
               ]
         }, {
             "id": 10,
-            "question": "I find it difficult to work out people’s intentions",
+            "question": "Does the child daydream or stare at nothing?",
             "options": [
                 { "id": 1, "text": "Yes" },
                 { "id": 2, "text": "No" }
@@ -441,12 +480,7 @@
             "title": "Matching & Classifying",
             "body": "(Matching / classifying) Matching: match a picture with a picture Match a picture with a black and white picture Match a picture with its shadow Classifying : put the object with its matching group from different shapes or colors or spices ."
         },
-        {
-            "id" : 3,
-            "demo": "https://www.aap.org/contentassets/a5857247f7dd48a0814388a6bd75d809/autistic-child-playing-with-blocks-focused.jpg",
-            "title": "Tools And Their Place",
-            "body": "A game containing different backgrounds with different places ( bathroom , living room , kitchen, school) and some different objects that clearly can be used in these places and the child should match the tool with its place Level one : all objects from the same place and there is a shadow to match the objects with Level two : mix objects from two different places."
-        },
+        
         {
             "id" : 4,
             "demo": "https://www.achievebeyondusa.com/wp-content/uploads/2022/03/what-are-the-different-types-of-autism_1200.jpg.webp",
@@ -484,8 +518,113 @@
             "status": "Pending",
             "time": "11:00 pm",
             "About": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc vel bibendum bibendum, elit elit bibendum."
+        },
+        {
+            "id": 2,
+            "profileImage": "https://scontent.fcai20-2.fna.fbcdn.net/v/t39.30808-6/327176132_1893831474311832_751235878540662466_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=VObAWa1fyMsAX-qsTUs&_nc_ht=scontent.fcai20-2.fna&oh=00_AfDwL6Z5i-c9z6gN3wAPwGljzLR8BjHEZqcQz9Y0kCQb1Q&oe=646DA86F",
+            "firstName": "Karim",
+            "lastName": "Ahmed",
+            "username": "Karim44Ahmed444",
+            "specialty": "Web Developer",
+            "email": "Moaz44Ahmed444@gmail.com",
+            "phoneNumber": "0109730251",
+            "dob": "28/11/2001",
+            "password": "password",
+            "status": "Pending",
+            "time": "11:00 pm",
+            "About": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc vel bibendum bibendum, elit elit bibendum."
+        },
+        {
+            "id": 2,
+            "profileImage": "https://scontent.fcai20-2.fna.fbcdn.net/v/t39.30808-6/327176132_1893831474311832_751235878540662466_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=VObAWa1fyMsAX-qsTUs&_nc_ht=scontent.fcai20-2.fna&oh=00_AfDwL6Z5i-c9z6gN3wAPwGljzLR8BjHEZqcQz9Y0kCQb1Q&oe=646DA86F",
+            "firstName": "Karim",
+            "lastName": "Ahmed",
+            "username": "Karim44Ahmed444",
+            "specialty": "Web Developer",
+            "email": "Moaz44Ahmed444@gmail.com",
+            "phoneNumber": "0109730251",
+            "dob": "28/11/2001",
+            "password": "password",
+            "status": "Pending",
+            "time": "11:00 pm",
+            "About": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc vel bibendum bibendum, elit elit bibendum."
+        },
+        {
+            "id": 2,
+            "profileImage": "https://scontent.fcai20-2.fna.fbcdn.net/v/t39.30808-6/327176132_1893831474311832_751235878540662466_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=VObAWa1fyMsAX-qsTUs&_nc_ht=scontent.fcai20-2.fna&oh=00_AfDwL6Z5i-c9z6gN3wAPwGljzLR8BjHEZqcQz9Y0kCQb1Q&oe=646DA86F",
+            "firstName": "Karim",
+            "lastName": "Ahmed",
+            "username": "Karim44Ahmed444",
+            "specialty": "Web Developer",
+            "email": "Moaz44Ahmed444@gmail.com",
+            "phoneNumber": "0109730251",
+            "dob": "28/11/2001",
+            "password": "password",
+            "status": "Pending",
+            "time": "11:00 pm",
+            "About": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc vel bibendum bibendum, elit elit bibendum."
         }
         ,
+        {
+            "id": 3,
+            "profileImage": "https://scontent.fcai20-2.fna.fbcdn.net/v/t39.30808-6/329146551_871633234043218_4033452085786423189_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=4XKn82VfDRAAX8p4El0&_nc_ht=scontent.fcai20-2.fna&oh=00_AfC7mJtg6xWZ39RI25RRsNcv5DgRYSxcmALmBDnohk3pYw&oe=646D364B",
+            "firstName": "Neven",
+            "lastName": "Hamdy",
+            "username": "Neven44Ahmed444",
+            "specialty": "Web Developer",
+            "email": "Moaz44Ahmed444@gmail.com",
+            "phoneNumber": "0109730251",
+            "dob": "25/12/2001",
+            "password": "password",
+            "status": "Declined",
+            "time": "5:45 am",
+            "About": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc vel bibendum bibendum, elit elit bibendum."
+        },
+        {
+            "id": 3,
+            "profileImage": "https://scontent.fcai20-2.fna.fbcdn.net/v/t39.30808-6/329146551_871633234043218_4033452085786423189_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=4XKn82VfDRAAX8p4El0&_nc_ht=scontent.fcai20-2.fna&oh=00_AfC7mJtg6xWZ39RI25RRsNcv5DgRYSxcmALmBDnohk3pYw&oe=646D364B",
+            "firstName": "Neven",
+            "lastName": "Hamdy",
+            "username": "Neven44Ahmed444",
+            "specialty": "Web Developer",
+            "email": "Moaz44Ahmed444@gmail.com",
+            "phoneNumber": "0109730251",
+            "dob": "25/12/2001",
+            "password": "password",
+            "status": "Declined",
+            "time": "5:45 am",
+            "About": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc vel bibendum bibendum, elit elit bibendum."
+        },
+        {
+            "id": 3,
+            "profileImage": "https://scontent.fcai20-2.fna.fbcdn.net/v/t39.30808-6/329146551_871633234043218_4033452085786423189_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=4XKn82VfDRAAX8p4El0&_nc_ht=scontent.fcai20-2.fna&oh=00_AfC7mJtg6xWZ39RI25RRsNcv5DgRYSxcmALmBDnohk3pYw&oe=646D364B",
+            "firstName": "Neven",
+            "lastName": "Hamdy",
+            "username": "Neven44Ahmed444",
+            "specialty": "Web Developer",
+            "email": "Moaz44Ahmed444@gmail.com",
+            "phoneNumber": "0109730251",
+            "dob": "25/12/2001",
+            "password": "password",
+            "status": "Declined",
+            "time": "5:45 am",
+            "About": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc vel bibendum bibendum, elit elit bibendum."
+        },
+        {
+            "id": 3,
+            "profileImage": "https://scontent.fcai20-2.fna.fbcdn.net/v/t39.30808-6/329146551_871633234043218_4033452085786423189_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=4XKn82VfDRAAX8p4El0&_nc_ht=scontent.fcai20-2.fna&oh=00_AfC7mJtg6xWZ39RI25RRsNcv5DgRYSxcmALmBDnohk3pYw&oe=646D364B",
+            "firstName": "Neven",
+            "lastName": "Hamdy",
+            "username": "Neven44Ahmed444",
+            "specialty": "Web Developer",
+            "email": "Moaz44Ahmed444@gmail.com",
+            "phoneNumber": "0109730251",
+            "dob": "25/12/2001",
+            "password": "password",
+            "status": "Declined",
+            "time": "5:45 am",
+            "About": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc vel bibendum bibendum, elit elit bibendum."
+        },
         {
             "id": 3,
             "profileImage": "https://scontent.fcai20-2.fna.fbcdn.net/v/t39.30808-6/329146551_871633234043218_4033452085786423189_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=4XKn82VfDRAAX8p4El0&_nc_ht=scontent.fcai20-2.fna&oh=00_AfC7mJtg6xWZ39RI25RRsNcv5DgRYSxcmALmBDnohk3pYw&oe=646D364B",

@@ -4,6 +4,7 @@ import { Container , Form , Input , Button , FileInput , FileInputLabel , FormGr
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Footer from "../../Footer/index.js";
+import data from "../../../JS/data.json";
 
 const INITIAL_STATE = {
   id: 1,    
@@ -19,10 +20,6 @@ const INITIAL_STATE = {
 };
 
 const EditSpecialistProfile = () => {
-  const [data, setdata] = useState ([]);
-  useEffect(() => {
-   axios.get('js/data.json').then(res => {setdata (res.data.Profiles)})
-  }, []);
 
   const [profileImage, setProfileImage] = useState('');
   const [imagePreview, setImagePreview] = useState('');

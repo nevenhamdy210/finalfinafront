@@ -4,6 +4,7 @@ import axios from "axios";
 import {Button,Header,HeaderSection,ReviewSection,Image2,Name2,Icon5,IconSection2,Comment,Icon2,Icon,Icon1,UlList,ListItem,ImageWrapper, Image,Schedules, Name} from "./style.js";
 import Footer from '../Footer/index.js';
 import { Link } from "react-router-dom";
+import { TableDiv } from "./style";
 
 const Specialist=({index})=> {
       const [images , setImages] = useState ([])
@@ -83,7 +84,9 @@ const Specialist=({index})=> {
             <Sec3>
                 
                 <ReviewHeader><i className="fa fa-comments"></i> Reviews</ReviewHeader>
-                <br/><br/> <br/><br/> {Reviews}
+                <TableDiv>
+                <br/><br/> {Reviews}
+                </TableDiv>
             </Sec3>
             </LeftSide> 
 

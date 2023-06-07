@@ -1,7 +1,7 @@
 import React ,{useEffect, useState} from "react";
 import { IconSection,Icon4,BodySection, H1, LeftSide,TableContainer, RightSide, Sec1, Sec3, TableHeader,TableRow,TableCell, AddButton } from "./style";
 import axios from "axios";
-import {Header,HeaderSection,IconP3,IconP4,Iconp5,UlList,ListItem,ImageWrapper, Image,Schedules, Name,Image3,Header_child_list,Button_parent} from "./style.js";
+import {TableDiv,Header,HeaderSection,IconP3,IconP4,Iconp5,UlList,ListItem,ImageWrapper, Image,Schedules, Name,Image3,Header_child_list,Button_parent} from "./style.js";
 import Footer from '../Footer/index.js';
 import { Link } from "react-router-dom";
 
@@ -74,6 +74,7 @@ const Parent=({index})=> {
             <Sec3>
             <div>
                 <Header_child_list><i className="fa fa-list"> </i> List of your children</Header_child_list>
+              <TableDiv>
             <TableContainer>
             <thead>
                 <tr>
@@ -86,6 +87,7 @@ const Parent=({index})=> {
                 {TimeTablee}
             </tbody>
             </TableContainer>
+            </TableDiv>
             <Link to="/PatientSignUpForm"><AddButton><i className="fa fa-plus" title="add new child"></i> Add</AddButton></Link>
     </div>
             </Sec3>

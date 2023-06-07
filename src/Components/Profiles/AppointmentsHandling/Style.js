@@ -64,26 +64,26 @@ export const DoctorImage = styled.img`
 `;
 
 export const Approoved = styled.td`
-    background-color: #5CC85B;
+    background-color: #50C878;
     padding: 0.5rem;
     border: 1px solid #ddd;
-    color: #696968;
+    color: black;
     text-align: center;
 `;
 
 export const Pending = styled.td`
-    background-color: #F4F9A6;
+    background-color: #FFFF5C;
     padding: 0.5rem;
-    border: 1px solid #ddd;
-    color: #696968;
+    border: 1px solid white;
+    color: black;
     text-align: center;
 `;
 
 export const Declined = styled.td`
-    background-color: #FA5050;
+    background-color: red;
     padding: 0.5rem;
     border: 1px solid #ddd;
-    color: #696968;
+    color: black;
     text-align: center;
 `;
 

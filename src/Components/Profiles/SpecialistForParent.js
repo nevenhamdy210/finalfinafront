@@ -5,6 +5,7 @@ import {Button,Button2,Header,HeaderSection,ReviewSection,Image2,Name2,Icon5,Ico
 import Footer from '../Footer/index.js';
 import { Link } from "react-router-dom";
 import ReviewForm from "./ReviewForm";
+import { TableDiv } from "./style";
 
 const SpecialistForParent=({index})=> {
       const [images , setImages] = useState ([])
@@ -98,7 +99,7 @@ const SpecialistForParent=({index})=> {
             </HeaderSection>
             <Sec3>
                 <ReviewHeader><i className="fa fa-comments"></i> Reviews</ReviewHeader>
-                <br/><br/> <br/><br/> {Reviews}
+                <br/><br/> <br/><br/><TableDiv> {Reviews}</TableDiv>
                 <Button2 type='submit' onClick={handleMakeReviewClick}><i className= "fa fa-pencil"></i> Make Review</Button2>
                 {showReviewForm && <ReviewForm onSubmit={handleSubmitReview} onClose={handleCloseReviewForm}/>}
             </Sec3>

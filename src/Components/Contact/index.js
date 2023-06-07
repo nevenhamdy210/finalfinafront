@@ -8,7 +8,7 @@ const Contact =()=> {
     <Drop>
     <HeaderSection>
             <Header>
-                <Title2>Contact Us</Title2>
+                <Title2></Title2>
             </Header>
         </HeaderSection>
         <div class="container">

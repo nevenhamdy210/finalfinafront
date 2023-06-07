@@ -7,7 +7,7 @@ const About =()=> {
     <div>
         <HeaderSection>
         <Header>
-            <Title>About Us</Title>
+            <Title></Title>
         </Header>
         </HeaderSection>
             <SecondSection>

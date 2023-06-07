@@ -78,7 +78,7 @@ export const ThirdSection = styled.div`
     overflow: hidden;
     margin-top:5%;
     padding:7%;
-    height:900px;
+    height:700px;
     background-color: white;
     `;
 export const RightSide = styled.div`
@@ -94,7 +94,7 @@ width:40%;
 export const Text = styled.div`
   font-size:25px;
   flex-direction: column;
-  margin-bottom: 20px;
+  margin-bottom: 7%;
   margin-top: 10%;
   width:100%;
   color:#8DA399;gray;
@@ -104,7 +104,7 @@ export const Text = styled.div`
 export const Button = styled.button`
   background: white;
   border: 1px solid #8DA399;
-  padding: 10px 150px;
+  padding: 2% 18%;
   text-align: center;
   text-decoration: none;
   display: inline-block;

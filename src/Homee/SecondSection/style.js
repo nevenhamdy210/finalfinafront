@@ -68,26 +68,25 @@ export const Image = styled.img`
 `
 export const TitleList = styled.h1`
 text-align:left;
-margin-bottom:60px;
+margin-bottom:10%;
 font-family: Roboto, Arial, sans-serif;
 font-size:28px;
 padding: 0%;
-//font-family:Andale Mono, monospace;
 font-weight: bold;
    
 
 `
 export const List = styled.ul`
 text-align:left;
-margin-top:40px;
+margin-top:6%;
 font-size:40px;
 list-style: none;
  padding: 0%;
 `
 export const ListElements = styled.li`
 color:gray;
-margin-top:10px;
-font-size:15px;
+margin-top:2%;
+font-size:14px;
 
 
 ` 

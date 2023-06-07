@@ -16,10 +16,11 @@ display: flex;
 justify-content: center;
 align-items: center;
 height: inherit;
-padding: 20px;
+padding: 100px;
+padding-top:80px;
 `
 export const Form = styled.form`
-width: 100%;
+width: 97%;
 padding: 20px;
 border-radius: 6px;
 background: #fff;
@@ -34,8 +35,8 @@ line-height: 40px;
 `
 export const Banner  = styled.div`
 position: relative;
-height: 300px;
-background-image: url("https://mind.help/wp-content/uploads/2022/10/AUTISM-test-site.jpg");  
+height: 400px;
+background:linear-gradient(to right, #9907facc,#3204),url('../images/app2.png');
 background-size: cover;
 display: flex;
 justify-content: center;
@@ -231,4 +232,97 @@ export const RadioInput = styled.input`
     border: 2px solid  #669999;
 }
 `;
+export const Form2 = styled.form`
 
+align-items: center;
+position: absolute;
+  box-shadow: 0 0 200px  #669999;
+  top: 105%;
+  left: 56%;
+  transform: translate(-90%, -40%);
+  background-color: white;
+  width:50%;
+  height:68%;
+  border-radius: 10px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+`;
+export const CloseIcon = styled.span`
+font-size: 24px;
+color: black;
+position: absolute;
+top: 10px;
+right: 30px;
+cursor: pointer;
+padding:1%;
+&:hover {
+    background-color: red;
+    color: white;
+    top: 10px;
+    right: 30px;
+    }
+`;
+export const FormHeader = styled.div`
+color:#008080;
+text-align:center;
+font-size: 30px;
+border:2px solid white;
+margin-bottom:0%;
+margin-top:2%;
+padding:5%;
+
+`;
+export const Button2 =styled.button`
+padding:10px 5px;
+transform: translate(-10%, -110%);
+width:20%;
+margin-top:0%;
+margin-right:5%;
+float:right;
+border-radius: 50px;
+//box-shadow: 0 0 7px  gray; 
+font-size:20px;
+border:1px solid #A3C1AD;
+color:black;
+font-family:Apple Chancery, cursive;
+background:white;
+&:hover {
+  background:linear-gradient(to right, #A3C1AD, #A3C1AD);#E1EBEE;#ADD8E6;#E1EBEE;#E6E6FA;
+    ;
+    color: white;
+    }
+   
+`;
+export const Button3 =styled.button`
+padding:10px 5px;
+transform: translate(-200%, -110%);
+width:20%;
+margin-top:0%;
+margin-right:5%;
+float:right;
+border-radius: 50px;
+//box-shadow: 0 0 7px  gray; 
+font-size:20px;
+border:1px solid #A3C1AD;
+color:black;
+font-family:Apple Chancery, cursive;
+background:white;
+&:hover {
+  background:linear-gradient(to right, #A3C1AD, #A3C1AD);#E1EBEE;#ADD8E6;#E1EBEE;#E6E6FA;
+    ;
+    color: white;
+    }
+   
+`;
+export const StyledButton = styled.button`
+  padding: 10px 20px;
+  background-color: #0077CC;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  
+  &:hover {
+    background-color: #005CA9;
+  }
+`

@@ -1,6 +1,7 @@
 
 import React, { useState } from "react";
 import { ThirdSection,Button,Text,RightSide , LeftSide ,Image1,Image2, Image3, Title} from "./style.js";
+import { Link } from "react-router-dom";
 const FeedbackSection =()=>{
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
@@ -22,7 +23,9 @@ const FeedbackSection =()=>{
       ASD screening is imminent to help health professionals and inform 
       you whether you should pursue formal clinical diagnosis.
         </Text>
-      <Button type="submit">take the quiz</Button>
+        <Link to="/Questionnaire">
+        <Button type="submit">Take the Quiz</Button>
+      </Link>
     </LeftSide>
     <RightSide>
     <Image1 src="../images/fed1.jpg" alt="react"/>

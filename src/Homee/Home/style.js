@@ -2,11 +2,8 @@ import styled from "styled-components";
 
 export const HomeSection =styled.div`
     height:600px;
-    //filter: sepia() hue-rotate(900deg) saturate(400%);
     width:100%;
-    // linear-gradient(to left, #bcd4e6, #3204),
     background: linear-gradient(to right, #9907facc,#3204),url('../images/hand.jpg');
-    //background: url('../images/hand.jpg');
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -40,7 +37,6 @@ export const HomeDesc =styled.div`
     font-size: 20px;
     line-height: 1.5;
     color: #888;
-    margin-bottom: 20px;
     color: white;
     
 `
@@ -49,12 +45,12 @@ export const Span =styled.span`
     color: #000
 `
 
-export const HomeButton=styled.div`
+export const HomeButton=styled.button`
     background: orange;
     color: #fff;
     font-size: 10px;
     width: 300px;
-    margin-left:25%;
+    margin-top:4%;
     border: 0;
     padding: 13px 20px;
     cursor: pointer;

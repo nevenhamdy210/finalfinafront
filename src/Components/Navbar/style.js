@@ -10,10 +10,10 @@ export const NavbarSection = styled.div`
 `
 
 export const Logo = styled.div`
-    width: 47%;
+    width: 35%;
     float: left;
    display:flex;
-  
+  //margin-top:10px;
    
 `
 
@@ -24,11 +24,11 @@ export const LogoText = styled.h2`
 `
 
 export const UlList = styled.ul`
-    width: 52%;
+    width: 65%;
     float: left;
     list-style: none;
     padding: 0%;
-    margin-top:40px;
+    margin-top:4%;
 `
 
 export const ListItem = styled.li`
@@ -40,8 +40,7 @@ export const Anchor = styled.a`
     color: #222;
     text-decoration: none;
     padding: 10px 15px;
-    font-weight: bold;
-
+    font-weight:bold;
     &:hover {
         color: #eb5424
 
@@ -61,10 +60,10 @@ export const LinkItem = styled(Link)`
     }
 `
 export const LogoImg =styled.img`
-margin-top:7%;
+margin-top:9%;
 border-radius:200px;
-width:50px;
+width:12%;
 height:40px;
-margin-right:2%;
+margin-right:0%;
 
 `

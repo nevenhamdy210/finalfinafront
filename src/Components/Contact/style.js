@@ -2,14 +2,14 @@ import styled from "styled-components";
 
 export const Drop =styled.div`
     color: #666;
-    padding-bottom: 100px;
+    padding-bottom: 0px;
     
 `
 
 export const Title =styled.h2`
-    margin-top: 50px;
+    margin-top: 8%;
     font-size: 70px;
-    color:#008080;
+    color:black;
     font-family:Apple Chancery, cursive;
     margin-bottom:0px;
     //text-shadow: 5px 5px #dddd;
@@ -24,7 +24,7 @@ export const Span =styled.span`
 `
 
 export const FormSection =styled.form`
-    margin-top: 20px;
+    margin-top: 3%;
     width: 100%;
     
 `
@@ -42,11 +42,10 @@ export const Input =styled.input`
 
 export const Body =styled.div`
 border-radius: 6px;
-background: #fff;
 box-shadow: 0 0 10px  #669999; 
 padding:5%;
-padding-top: 1px;
-padding-bottom: 150px;
+padding-top: 1%;
+padding-bottom: 15%;
 `
 
 export const InputForm =styled.div`
@@ -55,26 +54,26 @@ export const InputForm =styled.div`
 
 
 export const InputText =styled(Input)`
-    width: 100%;
+    width: 96%;
   
 `
 
 export const InputEmail =styled(Input)`
-    width: 100%;
+    width: 96%;
   
 `
 
 export const InputExp =styled(Input)`
-    width: 100%;
+    width: 96%;
     
 `
 
 export const TextArea =styled.textarea`
-    width: 100%;
+    width: 99%;
     outline: 0;
     background: #dddd;
     border-radius: 10px;
-    margin-top:10px;
+    margin-top:3%;
     font-size:20px;
     `
 
@@ -86,8 +85,8 @@ font-size: 15px;
 padding:15px 45px;
 float:right;
 margin-left:100px;
-margin-top:50px;
-margin-bottom:10px;
+margin-top:6%;
+margin-bottom:6%;
 border: 2px solid gray;
 font-family:Apple Chancery, cursive;
 cursor: pointer;
@@ -99,8 +98,8 @@ color: white;
 }
 `
 export const Icon =styled.i`
-color:#008080;
-margin-top:10px;
+color:black;
+margin-top:2%;
 `
 export const SpanIcon =styled.span`
 color:black;
@@ -123,8 +122,8 @@ export const Title2 =styled.h2`
    
 `
 export const HeaderSection =styled.div`
-    height:200px;
-    background: linear-gradient(to right, #9907facc,#3204),url('../images2/team.jpg');
+    height:300px;
+    background: url('../images/contact.png');
     background-size: cover;
     background-position: center;
     text-align: center;

@@ -4,11 +4,13 @@ import axios from "axios";
 
 const Table = () => {
 
-
+      const [day,setDay] = useState("")
+      
        const [selectedCell, setSelectedCell] = useState (null);
        const [tableData, settableData] = useState ([]);
        useEffect(() => {
         axios.get('js/data.json').then(res => {settableData (res.data.cells)})
+        setDay("ay7aga")
        }, []);
 
       const SelectedCell = ({ selectedCell }) => {
@@ -43,12 +45,12 @@ const Table = () => {
     <TableContainer>
       <thead>
         <tr>
-          <TableHeader>Fri <br/><Date>30 Mar.</Date></TableHeader>
           <TableHeader>Sat <br/><Date>31 Mar.</Date></TableHeader>
           <TableHeader>Sun <br/><Date>01 Apr.</Date></TableHeader>
           <TableHeader>Mon <br/><Date>02 Apr.</Date></TableHeader>
           <TableHeader>Tue <br/><Date>03 Apr.</Date></TableHeader>
           <TableHeader>Wed <br/><Date>04 Apr.</Date></TableHeader>
+          <TableHeader>{day}<br/><Date>30 Mar.</Date></TableHeader>
         </tr>
       </thead>
       <tbody>

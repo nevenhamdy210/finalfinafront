@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const BodySection = styled.div` 
     margin:60px;
-    padding:40px;
+    padding:4%;
     border-radius: 6px;
     box-shadow: 0 0 10px  #669999; 
     //background:linear-gradient(to top, white, #E1EBEE);
@@ -19,16 +19,17 @@ export const RightSide = styled.div`
     width:30%;
     float:right;
     height: 860px;
-    padding:30px;
+    padding:2%;
     margin-top:1%;
 
 `
 
 export const ImageWrapper = styled.div `
     width: 100%;
-    padding:30px;
-    padding-bottom:0px;
-    background-color:white;
+    padding-left:2%;
+    padding-top:8%;
+    padding-bottom:0%;
+
     
 `
 
@@ -82,7 +83,6 @@ export const Name=styled.h2`
     font-size:20px;
     color:black;
     text-align:center;
-    background-color:white;
     //text-shadow: 2px 0px lightgray;
     font-family:  Arial, sans-serif;
 `
@@ -127,6 +127,7 @@ color:#5F9EA0;#007791;#800080;#367588;
 export const IconSection=styled.div`
 text-align:center;
 width:100%;
+padding-bottom:2%;
 
 `
 export const Overlay = styled.div` 
@@ -165,8 +166,8 @@ export const UlList = styled.ul`
     list-style: none;
     padding: 0%;
     font-size: 9px;
-    margin-left:50px;
-    margin-top:20px;
+    margin-left:12%;
+    margin-top:10%;
     text-align:center;
     
 `
@@ -463,6 +464,20 @@ export const TableContainer2 = styled.table`
   padding:6%;
   
 `;
+export const TableDiv = styled.div`
+  width:100%;
+  overflow: auto;
+   height: 340px;
+   margin-bottom:0%;
+  
+`;
+export const TBody = styled.tbody`
+  width:100%;
+  overflow: auto;
+   height: 350px;
+   margin-bottom:3%;
+`;
+
 export const Image3 = styled.img`
     width:18%;
     height: 30px;
